@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:ital,wght@0,100..900;1,100..900&display=swap');
+.contacts{
+    padding-bottom: 220px;
+}
+.title{
+    font-size: 5vw;
+    text-align: center;
+    font-family: MuseoModerno, serif;
+}
+.contactDesc{
+    color: #eee5;
+    text-align: center;
+    max-width: 500px;
+    margin: auto;
+}
+.listContact{
+    text-align: center;
+    /* border: 3px solid white; */
+}
+.listContactItem{
+    /* border: 3px solid wheat; */
+    margin-top: 50px;
+    display: flex;
+    gap: 0;
+    flex-direction: column;
+}
