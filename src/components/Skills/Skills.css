@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:ital,wght@0,100..900;1,100..900&display=swap');
+.skills{
+    text-align: center;
+    font-family: MuseoModerno, serif;
+    /* padding-left: 50px; */
+    /* padding-right: 50px; */
+}
+.title{
+    font-size: 3em;
+}
+.titleDesc{
+    color: #eee5;
+    text-align: center;
+    max-width: 500px;
+    margin: auto;
+}
+.skillList{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 250px);
+    /* grid-template-rows: repeat(auto-fill, 200px); */
+    justify-content: center;
+    gap: 3vw;
+    /* position: relative; */
+}
+.skillItem{
+    background-color: rgba(109, 0, 109, 0.119);
+    backdrop-filter: blur(20px);
+    background-image: linear-gradient(
+        160deg,
+        rgba(255, 255, 255, 0.3),
+        rgba(0, 0, 0, 0.2)
+    );
+    /* background-size: 30px; */
+    border-radius: 20px;
+    padding: 20px;
+}
+.skillItem i{
+    font-size: 40px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #eee2;
+}
+.skillItem:hover{
+    transform: scale(1.08);
+}

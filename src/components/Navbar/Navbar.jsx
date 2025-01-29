@@ -21,6 +21,7 @@ const Navbar = ({activeTab = 'Home'}) => {
             {
                 listNav.map((value, key) => (
                     <span 
+                        id='navLinks'
                         key={key} 
                         className={activeTab === value ? 'active' : ''}
                         onClick={() => changeActiveTab(value)}

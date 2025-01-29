@@ -24,3 +24,10 @@
     gap: 0;
     flex-direction: column;
 }
+.listContactItem h3 a i{
+    font-size: 30px;
+    color: white;
+}
+.listContactItem h3 a{
+    text-decoration: none;
+}
