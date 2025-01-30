@@ -50,7 +50,7 @@ const Skills = () => {
         These are My Skills
       </div>
       <div className="titleDesc">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius aspernatur quam eos quasi maiores quas aliquid dignissimos animi voluptate velit rem at ad delectus dolor illo, corporis voluptatibus sunt ipsum?
+        Here is a list of my skillset. Hopefully as time progresses, I'll pick up a ton more along the way in my Software Engineering journey ‼️
       </div>
       <div className="skillList">
         {

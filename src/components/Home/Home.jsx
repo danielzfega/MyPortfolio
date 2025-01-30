@@ -1,12 +1,30 @@
-import React from 'react'
+import React, {useState} from 'react'
 import avatar from '../../images/avatar.png'
+import myPic from '../../images/myPic.jpg'
 import './Home.css'
-import { FaLaptopCode } from "react-icons/fa";
+import { FaCalendarAlt, FaLaptopCode } from "react-icons/fa";
 import { GiNigeria } from "react-icons/gi";
-import { FcCalendar } from "react-icons/fc";
 import { FaMale } from "react-icons/fa";
+import {Swiper, SwiperSlide} from 'swiper/react'
+import {Navigation, Pagination, Autoplay, EffectCube} from 'swiper/modules';
+
+
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+import 'swiper/css/effect-cube'
+
 
 const Home = () => {
+  const [swapPics] = useState([
+      {
+        picImg: avatar
+      },
+      {
+        picImg: myPic
+      }
+  ])
+
   return (
     <section className='home'>
 
@@ -15,19 +33,44 @@ const Home = () => {
           MY NAME IS <span className='nameSpan'>DANIELS FEGA</span>
         </div>
         <div className="desc">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, recusandae! Commodi, veniam quis quibusdam sequi debitis eveniet impedit laborum, molestiae quidem, earum aut tenetur? Magni sit hic quam fugit illum.
+          Hello 👋, and welcome to my portfolio website. I am an enthusiastic Software Enginner who is passionate about building projects that combine aesthetics with modern innovation.
         </div>
         <a href="">Download My CV</a>
       </div>
 
       <div className="avatar">
         <div className="card">
-          <img src={avatar} alt="" />
+
+          <Swiper
+            effect={'cube'}
+            // grabCursor={true}
+            cubeEffect={{
+              shadow: true,
+              slideShadows: true,
+              shadowOffset: 20,
+              shadowScale: 0.94,
+            }}
+            modules={[Pagination, EffectCube, Navigation, Autoplay]}
+            className="mySwiper"
+            autoplay={{
+              delay: 3000, // 3 seconds delay between slides
+              disableOnInteraction: false, // Keeps autoplay running even after user interaction
+            }}
+          >
+           {
+              swapPics.map((value, key) => (
+                <SwiperSlide key={key} className='picSlideShow'>
+                  <img src={value.picImg} alt="" />
+                </SwiperSlide>
+              
+            ))}
+          </Swiper>
+
           <div className="info">
-            <div><FaLaptopCode /> Developer</div>
-            <div><GiNigeria /> Nigerian</div>
-            <div><FcCalendar /> 11th November</div>
-            <div><FaMale /> Male</div>
+            <div><i className='code'><FaLaptopCode /></i> Developer</div>
+            <div><i className='nigeria'><GiNigeria /></i> Nigerian</div>
+            <div><i className="calendar"><FaCalendarAlt /></i> 11th November</div>
+            <div><i className='people'><FaMale /> </i>Male</div>
           </div>
         </div>
       </div>

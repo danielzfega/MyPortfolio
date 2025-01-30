@@ -39,7 +39,7 @@ const Contact = () => {
         Contact Me
       </div>
       <div className='contactDesc'>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla delectus esse illo corrupti similique voluptates ducimus officia minus consequuntur, non vel iure vero maxime quidem praesentium alias culpa! Voluptatem, soluta.
+        Want to create a visually stunning masterpiece that combines modern innovations and trending designs? I've got you. Contact me on any of these platforms and let's get started  
       </div>
       <div className="listContact">
         {

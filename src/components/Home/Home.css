@@ -1,4 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=MuseoModerno:ital,wght@0,100..900;1,100..900&display=swap');
+@font-face {
+    font-family: 'SquareGame';
+    src: url('../../fonts/Square Game.woff2') format('woff2'), 
+         url('../../fonts/Square Game.ttf') format('truetype');
+}
 section{
     width: min(1300px, 100%);
     margin: auto;
@@ -17,7 +22,7 @@ section{
     font-family: MuseoModerno, serif;
 }
 .name{
-    font-size: 6em;
+    font-size: 80px;
     font-weight: bold;
     line-height: 1em;
 }
@@ -55,6 +60,7 @@ section{
     background-color: #eee;
     transition: 1s;
     color: #010824;
+    transform: scale(1.08);
 }
 .avatar{
     text-align: right;
@@ -70,6 +76,7 @@ section{
     box-shadow: 0 150px 150px #e945e333;
 }
 .card img{
+    /* border: 3px solid wheat; */
     width: 100%;
     height: min(700px, 50vh);
     object-fit: cover;
@@ -79,8 +86,8 @@ section{
     );
 }
 .info{
-    background-color: #eee;
-    color: #010824;
+    background-color: #0000007d;
+    color: antiquewhite;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
@@ -88,8 +95,44 @@ section{
     /* text-align: center; */
     gap: 20px;
     padding: 20px;
-    font-size: 1.2em;
+    font-size: 1.1em;
+    font-family: 'SquareGame', sans-serif;
 }
-.info div:nth-child(-n + 3){
+/* .info div:nth-child(-n + 3){
     font-weight: bold;
+} */
+.mySwiper{
+    width: 400px;
+    height: 350px;
+    padding: 50px;
+}
+.picSlideShow {
+    background-position: center;
+    background-size: cover;
+    width: 350px;
+    height: 350px;
+  }
+  
+  .picSlideShow img {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+.info div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.code{
+    color: orange;
+}
+.nigeria{
+    color: #7BE728;
+}
+.people{
+    color: #F3265F;
+}
+.calendar{
+    color: darksalmon;
 }

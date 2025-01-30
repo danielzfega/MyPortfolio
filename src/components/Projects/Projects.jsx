@@ -12,25 +12,25 @@ import 'swiper/css/effect-coverflow';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
-const Projects = () => {
+const Projects = () => { 
   const [listProjects] = useState([
     {
       name: 'HomeStyler | Interior Home Decor',
-      des: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat accusantium, necessitatibus laboriosam illum atque dolore error quam expedita molestiae et aut consequuntur distinctio. In, voluptatem qui magnam numquam blanditiis assumenda?',
-      mission: 'Front-end Developer, CO-ordinator, System analysis and design',
+      des: 'A frontend design for an imaginary company that provides home interior decor services based on the SRS given by Aptech Computer Learning as part of a project',
+      mission: 'Front-end Developer, Team Leader, System analysis and design',
       language: 'HTML5, CSS3, ReactJs...',
       images: homestyler
     },
     {
       name: 'StudyHub | E-Learning Website',
-      des: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat accusantium, necessitatibus laboriosam illum atque dolore error quam expedita molestiae et aut consequuntur distinctio. In, voluptatem qui magnam numquam blanditiis assumenda?',
+      des: 'Prototypes for About page and Blog page designs for a modern fullstack E-Learning Website project.',
       mission: 'Front-end Developer, System design',
       language: 'HTML5, CSS3, ReactJs...',
       images: studyhub
     },
     {
       name: 'Weather App Demo v1.0 ',
-      des: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat accusantium, necessitatibus laboriosam illum atque dolore error quam expedita molestiae et aut consequuntur distinctio. In, voluptatem qui magnam numquam blanditiis assumenda?',
+      des: 'A real time weather tracking web application which uses an API to get current weather data and displays to the user.',
       mission: 'Front-end Developer, system analysis and design',
       language: 'HTML5, CSS3, Javascript, ReactJs...',
       images: weather1
@@ -43,7 +43,7 @@ const Projects = () => {
           My Projects
         </div>
         <div className="projectsDesc">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, voluptatibus. Tenetur magnam quibusdam sed ullam, nemo quo voluptates? Blanditiis odio expedita perferendis neque explicabo commodi aliquam nobis. Ut, minima perspiciatis.
+          Here is a preview  of some of my most IMPRESSIVE works during the course of my learning. Adding to this list is one of my top priorities as time goes on.
         </div>
         <div className="list">
           <Swiper
@@ -89,7 +89,7 @@ const Projects = () => {
                         <div className='missionIcon'><FaPersonCircleQuestion/></div>
 
                         <div>
-                          <h4>Mission</h4>
+                          <h4>Role</h4>
                           <div className="missionTxt">{value.mission}</div>
                         </div>
 

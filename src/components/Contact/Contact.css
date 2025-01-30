@@ -14,18 +14,31 @@
     margin: auto;
 }
 .listContact{
+    margin-top: 40px;
     text-align: center;
     /* border: 3px solid white; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 150px;
 }
 .listContactItem{
     /* border: 3px solid wheat; */
-    margin-top: 50px;
+    /* margin-top: 50px; */
     display: flex;
-    gap: 0;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+.listContactItem h3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
 }
 .listContactItem h3 a i{
-    font-size: 30px;
+    font-size: 25px;
     color: white;
 }
 .listContactItem h3 a{
