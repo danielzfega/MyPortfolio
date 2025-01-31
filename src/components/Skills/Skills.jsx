@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useRef, useEffect } from 'react'
 import { FaHtml5 } from "react-icons/fa";
 import { IoLogoNodejs } from "react-icons/io5";
 import { IoLogoCss3 } from "react-icons/io";
@@ -10,6 +10,28 @@ import { TbBrandCSharp } from "react-icons/tb";
 import './Skills.css'
 
 const Skills = () => {
+  const skillsRef = useRef();
+  const [isVisible, setIsVisible] = useState(false)
+  
+    useEffect(() => {
+      const observer = new IntersectionObserver(
+        ([entry]) => {
+          setIsVisible(entry.isIntersecting);
+        },
+        { threshold: 0.3 } // Trigger when 30% of the section is visible
+      );
+  
+      if (skillsRef.current) {
+        observer.observe(skillsRef.current);
+      }
+  
+      return () => {
+        if (skillsRef.current) {
+          observer.unobserve(skillsRef.current);
+        }
+      };
+    }, []);
+
   const[listSkills] = useState([
     {
       icon: <FaHtml5 />,
@@ -45,7 +67,7 @@ const Skills = () => {
     },
   ])
   return (
-    <div className="skills">
+    <div className={`skills animation ${isVisible ? 'animation-active' : ''}`} ref={skillsRef}>
       <div className="title">
         These are My Skills
       </div>

@@ -1,5 +1,4 @@
-import React, {useState} from 'react'
-import { useRef } from 'react';
+import React, {useState, useRef, useEffect} from 'react'
 import './Contact.css'
 import { BsMailboxFlag } from "react-icons/bs";
 import { LuPhoneCall } from "react-icons/lu";
@@ -9,6 +8,27 @@ import { FaLinkedin, FaGithub } from "react-icons/fa";
 
 const Contact = () => {
   const contactRef = useRef();
+  const [isVisible, setIsVisible] = useState(false)
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        setIsVisible(entry.isIntersecting);
+      },
+      { threshold: 0.3 } // Trigger when 30% of the section is visible
+    );
+
+    if (contactRef.current) {
+      observer.observe(contactRef.current);
+    }
+
+    return () => {
+      if (contactRef.current) {
+        observer.unobserve(contactRef.current);
+      }
+    };
+  }, []);
+
   const [listContacts] = useState([
     {
       title: 'Phone Number',
@@ -33,7 +53,7 @@ const Contact = () => {
   ])
 
   return (
-    <section className="contacts" ref={contactRef}>
+    <section className={`contacts animation ${isVisible ? 'animation-active' : ''}`} ref={contactRef}>
       <div className="title">
         Contact Me
       </div>

@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useState, useRef, useEffect} from 'react'
 import avatar from '../../images/avatar.png'
 import myPic from '../../images/myPic.jpg'
 import './Home.css'
@@ -16,6 +16,28 @@ import 'swiper/css/effect-cube'
 
 
 const Home = () => {
+  const homeRef = useRef();
+  const [isVisible, setIsVisible] = useState(false)
+  
+    useEffect(() => {
+      const observer = new IntersectionObserver(
+        ([entry]) => {
+          setIsVisible(entry.isIntersecting);
+        },
+        { threshold: 0.3 } // Trigger when 30% of the section is visible
+      );
+  
+      if (homeRef.current) {
+        observer.observe(homeRef.current);
+      }
+  
+      return () => {
+        if (homeRef.current) {
+          observer.unobserve(homeRef.current);
+        }
+      };
+    }, []);
+
   const [swapPics] = useState([
       {
         picImg: avatar
@@ -26,7 +48,7 @@ const Home = () => {
   ])
 
   return (
-    <section className='home'>
+    <section className={`home animation ${isVisible ? 'animation-active' : ''}`} ref={homeRef}>
 
       <div className="content">
         <div className="name">

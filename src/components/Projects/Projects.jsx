@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useState, useRef, useEffect} from 'react'
 import { FaPersonCircleQuestion, FaEarthAmericas, FaArrowLeft, FaArrowRight } from 'react-icons/fa6'
 import homestyler from '../../images/homestyler.png'
 import studyhub from '../../images/studyhub.png'
@@ -13,6 +13,28 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
 const Projects = () => { 
+  const projectsRef = useRef();
+  const [isVisible, setIsVisible] = useState(false)
+  
+    useEffect(() => {
+      const observer = new IntersectionObserver(
+        ([entry]) => {
+          setIsVisible(entry.isIntersecting);
+        },
+        { threshold: 0.3 } // Trigger when 30% of the section is visible
+      );
+  
+      if (projectsRef.current) {
+        observer.observe(projectsRef.current);
+      }
+  
+      return () => {
+        if (projectsRef.current) {
+          observer.unobserve(projectsRef.current);
+        }
+      };
+    }, []);
+
   const [listProjects] = useState([
     {
       name: 'HomeStyler | Interior Home Decor',
@@ -38,7 +60,7 @@ const Projects = () => {
   ])
   return (
     <div>
-      <section className="projects">
+      <section className={`projects animation ${isVisible ? 'animation-active' : ''}`} ref={projectsRef}>
         <div className="title">
           My Projects
         </div>
