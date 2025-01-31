@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { useRef } from 'react'
 import './App.css'
 import Navbar from './components/Navbar/Navbar'
 import Home from './components/Home/Home'
@@ -7,15 +8,26 @@ import Projects from './components/Projects/Projects'
 import Contact from './components/Contact/Contact'
 
 function App() {
+  const homeRef = useRef();
+  const skillsRef = useRef();
+  const projectsRef = useRef();
+  const contactRef = useRef();
   
+  const scrollToSection = (ref) => {
+    if (ref?.current) {
+      ref.current.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
   return (
     <>
       <main>
-          <Navbar/>
-          <Home/>
-          <Skills></Skills>
-          <Projects></Projects>
-          <Contact></Contact>
+        <Navbar scrollToSection={scrollToSection} refs={{ homeRef, skillsRef, projectsRef, contactRef }} />
+        <main>
+          <section ref={homeRef}><Home /></section>
+          <section ref={skillsRef}><Skills /></section>
+          <section ref={projectsRef}><Projects /></section>
+          <section ref={contactRef}><Contact /></section>
+        </main>
       </main>
     </>
   )

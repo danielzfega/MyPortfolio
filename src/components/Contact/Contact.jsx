@@ -4,10 +4,11 @@ import './Contact.css'
 import { BsMailboxFlag } from "react-icons/bs";
 import { LuPhoneCall } from "react-icons/lu";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
-import CustomHook from '../CustomHook';
+// import CustomHook from '../CustomHook';
 
 
 const Contact = () => {
+  const contactRef = useRef();
   const [listContacts] = useState([
     {
       title: 'Phone Number',
@@ -31,10 +32,8 @@ const Contact = () => {
     }
   ])
 
-  const refTab = useRef();
-  CustomHook(refTab);
   return (
-    <section className="contacts" ref={refTab}>
+    <section className="contacts" ref={contactRef}>
       <div className="title">
         Contact Me
       </div>

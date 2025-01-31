@@ -1,15 +1,17 @@
 import React, { useState } from 'react'
 import './Navbar.css'
-import { connect } from 'react-redux';
-import {changeActiveTab} from '../../redux/action'
+// import Contact from '../Contact/Contact';
 
-// import Logo from '../../images/logo.png'
-
-const Navbar = ({activeTab = 'Home'}) => {
+const Navbar = ({scrollToSection, refs}) => {
     // alert(activeTab)
-    console.log("Active Tab:", activeTab);
+    // console.log("Active Tab:", activeTab);
     
-    const [listNav] = useState(['Home', 'Skills', 'Projects', 'Contact']);
+    const [listNav] = useState([
+        { name: 'Home', ref: refs.homeRef },
+        { name: 'Skills', ref: refs.skillsRef },
+        { name: 'Projects', ref: refs.projectsRef },
+        { name: 'Contact', ref: refs.contactRef },
+    ]);
     
   
   return (
@@ -23,10 +25,11 @@ const Navbar = ({activeTab = 'Home'}) => {
                     <span 
                         id='navLinks'
                         key={key} 
-                        className={activeTab === value ? 'active' : ''}
-                        onClick={() => changeActiveTab(value)}
+                        className='active'
+                        onClick={() => scrollToSection(value.ref)}
+
                     >
-                        {value}
+                        {value.name}
                     </span>
                 ))
             }
@@ -34,16 +37,16 @@ const Navbar = ({activeTab = 'Home'}) => {
     </header>
   )
 }
-const mapDispatchToProps = (dispatch) => ({
-    changeActiveTab: (value) => dispatch(changeActiveTab(value))
-});
+// const mapDispatchToProps = (dispatch) => ({
+//     changeActiveTab: (value) => dispatch(changeActiveTab(value))
+// });
 
-const mapStateToProps = (state) => {
-    console.log("Redux State:", state); // Debugging
-    return {
-        activeTab: state.activeTab // Ensure `state.activeTab` exists
-    };
-};
+// const mapStateToProps = (state) => {
+//     console.log("Redux State:", state); // Debugging
+//     return {
+//         activeTab: state.activeTab // Ensure `state.activeTab` exists
+//     };
+// };
 
-export default connect(mapStateToProps, mapDispatchToProps)(Navbar);
+export default Navbar;
 
