@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=MuseoModerno:ital,wght@0,100..900;1,100..900&display=swap');
 .contacts{
     padding-bottom: 220px;
+    /* width: 500px; */
+    /* background-color: aqua; */
 }
 .title{
     font-size: 5vw;
@@ -31,16 +33,29 @@
     align-items: center;
     height: 100px;
 }
-.listContactItem h3{
+.listContactItem a{
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 10px;
+    color: rgba(238, 238, 238, 0.685);
 }
-.listContactItem h3 a i{
+.listContactItem a i{
     font-size: 25px;
     color: white;
 }
-.listContactItem h3 a{
+.listContactItem a{
     text-decoration: none;
+}
+
+.listContactItem a:hover, .listContactItem a:hover i{
+    color: #e945e3;
+    transform: scale(1.1);
+}
+
+@media screen and (max-width:1000px) {
+    .listContact{
+        display: flex;
+        flex-direction: column;
+    }
 }

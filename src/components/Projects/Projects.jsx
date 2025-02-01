@@ -39,21 +39,21 @@ const Projects = () => {
     {
       name: 'HomeStyler | Interior Home Decor',
       des: 'A frontend design for an imaginary company that provides home interior decor services based on the SRS given by Aptech Computer Learning as part of a project',
-      mission: 'Front-end Developer, Team Leader, System analysis and design',
+      role: 'Front-end Developer, Team Leader, System design',
       language: 'HTML5, CSS3, ReactJs...',
       images: homestyler
     },
     {
       name: 'StudyHub | E-Learning Website',
       des: 'Prototypes for About page and Blog page designs for a modern fullstack E-Learning Website project.',
-      mission: 'Front-end Developer, System design',
+      role: 'Front-end Developer, System design',
       language: 'HTML5, CSS3, ReactJs...',
       images: studyhub
     },
     {
-      name: 'Weather App Demo v1.0 ',
+      name: 'Weather App v1.0 ',
       des: 'A real time weather tracking web application which uses an API to get current weather data and displays to the user.',
-      mission: 'Front-end Developer, system analysis and design',
+      role: 'Front-end Developer, system analysis and design',
       language: 'HTML5, CSS3, Javascript, ReactJs...',
       images: weather1
     }
@@ -110,9 +110,9 @@ const Projects = () => {
                       <div className="mission">
                         <div className='missionIcon'><FaPersonCircleQuestion/></div>
 
-                        <div>
+                        <div className='projectInfo'>
                           <h4>Role</h4>
-                          <div className="missionTxt">{value.mission}</div>
+                          <div className="missionTxt">{value.role}</div>
                         </div>
 
                       </div>
@@ -120,7 +120,7 @@ const Projects = () => {
                       <div className="mission">
                         <div className='missionIcon'><FaEarthAmericas/></div>
 
-                        <div>
+                        <div className='projectInfo'>
                           <h4>Language</h4>
                           <div className="missionTxt">{value.language}</div>
                         </div>

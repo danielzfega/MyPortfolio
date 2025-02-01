@@ -38,7 +38,7 @@ body{
 
 main{
   width: min(1300px, 100%);
-  margin: auto;
+  margin: aut0o;
 }
 
 .animation{
@@ -55,55 +55,8 @@ main{
   opacity: 1;
 }
 
-@media (max-width: 1024px) {
-  .home, .item {
-    grid-template-columns: 1fr;
-    text-align: center;
-  }
-  .avatar {
-    text-align: center;
-  }
-}
-
-@media (max-width: 768px) {
-  .name {
-    font-size: 10vw;
-  }
-  .desc {
-    font-size: 1rem;
-    padding-left: 1em;
-    border-left-width: 0.5em;
-  }
-  .content a {
-    font-size: medium;
-    padding: 15px 25px;
-  }
-  .card img {
-    height: auto;
-    clip-path: none;
-  }
-  .info {
-    grid-template-columns: 1fr;
-    text-align: center;
-  }
-}
-
-@media (max-width: 480px) {
-  body {
-    background-size: cover;
-  }
-  section {
-    padding: 20px;
-  }
-  .skillList {
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-  }
-  .listContact {
-    flex-direction: column;
-    height: auto;
-    gap: 20px;
-  }
-  .listContactItem {
-    height: auto;
+@media screen and (max-width: 684px) {
+  .project{
+    padding: 0;
   }
 }
