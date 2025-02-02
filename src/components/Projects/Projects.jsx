@@ -83,7 +83,7 @@ const Projects = () => {
             loop = {true}
             slidesPerView={1}
             autoplay={{
-              delay: 3000, // 3 seconds delay between slides
+              delay: 4500, // 3 seconds delay between slides
               disableOnInteraction: false, // Keeps autoplay running even after user interaction
             }}
             coverflowEffect={{

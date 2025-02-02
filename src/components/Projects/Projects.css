@@ -94,6 +94,16 @@
     grid-column-start: 1;
     grid-row-start: 1;
 }
+/* Apply blur to non-active slides */
+.swiper-slide {
+    filter: blur(30px); /* Blurs background slides */
+    transition: filter 0.5s ease-in-out;
+}
+
+/* Remove blur from the active slide */
+.swiper-slide-active {
+    filter: blur(); /* Keeps the current slide clear */
+}
 
 @media screen and (max-width: 1130px) {
     .item{
@@ -153,11 +163,9 @@
     .images img{
         width: 150%;
         height: 160px;
-        /* border: 2px solid white; */
     }
     .images{
         width:200px;
-        /* border: 2px solid aquamarine; */
     }
     .content h3{
         font-size: 28px;
