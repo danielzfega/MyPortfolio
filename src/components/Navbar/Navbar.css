@@ -147,7 +147,7 @@ span{
         border-radius: 0;
         height: 60%;
         display: flex;
-        justify-content: start;
+        justify-content: center;
         align-items: center;
     }
     nav{
