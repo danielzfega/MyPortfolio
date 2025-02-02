@@ -147,7 +147,7 @@ span{
         border-radius: 0;
         height: 60%;
         display: flex;
-        justify-content: center;
+        justify-content: start;
         align-items: center;
     }
     nav{
@@ -157,8 +157,8 @@ span{
         position: absolute;
         top: 100px;
         align-items: start;
-        right: 50px;
-        width: 200px;
+        right: 0px;
+        width: 160px;
         height: 250px;
         border-radius: 0;
         background-color: rgba(0, 0, 0, 0.372);
@@ -168,7 +168,7 @@ span{
     .navLinks{
         text-align: start;
         flex-direction: column;
-
+        padding-left: 10px;
         /* border: 1px solid white; */
     }
     .nav.open{

@@ -3,6 +3,7 @@ import { FaPersonCircleQuestion, FaEarthAmericas, FaArrowLeft, FaArrowRight } fr
 import homestyler from '../../images/homestyler.png'
 import studyhub from '../../images/studyhub.png'
 import weather1 from '../../images/weather1.0.png'
+import productCard from '../../images/productCard.png'
 import './Projects.css'
 import {Swiper, SwiperSlide} from 'swiper/react'
 import { Navigation, Pagination, EffectCoverflow, Autoplay } from 'swiper/modules';
@@ -42,6 +43,13 @@ const Projects = () => {
       role: 'Front-end Developer, Team Leader, System design',
       language: 'HTML5, CSS3, ReactJs...',
       images: homestyler
+    },
+    {
+      name: 'E-Commerce Product Card',
+      des: 'A re-usable animated eCommerce product card template.',
+      role: 'Front-end Developer',
+      language: 'HTML5, CSS3, Javascript',
+      images: productCard
     },
     {
       name: 'StudyHub | E-Learning Website',

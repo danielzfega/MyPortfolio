@@ -32,12 +32,12 @@ const Contact = () => {
   const [listContacts] = useState([
     {
       title: 'Phone Number',
-      // value: '+234-4104-9407',
+      value: '+234-4104-9407',
       icon: <LuPhoneCall/>
     },
     {
       title: 'Email',
-      // value: 'omajeneoghenefega11@gmail.com',
+      value: 'omajeneoghenefega11@gmail.com',
       icon: <BsMailboxFlag/> 
     },
     {
@@ -64,10 +64,13 @@ const Contact = () => {
         {
           listContacts.map((value, key) =>(
             <div key={key} className="listContactItem">
-              <a href={value.link}>{value.title}  <i>{value.icon}</i></a>
-             
-              <h4>{value.value} </h4>
+              <a href={value.link} className='myContact'>{value.title}  <i>{value.icon}</i></a>
+    
+              <div className="messageBox">
+                {value.value} 
+              </div>
             </div>
+            
           ))
         }
       </div>

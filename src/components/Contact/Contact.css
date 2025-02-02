@@ -33,29 +33,74 @@
     align-items: center;
     height: 100px;
 }
-.listContactItem a{
+.myContact{
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 10px;
     color: rgba(238, 238, 238, 0.685);
+    text-decoration: none;
 }
-.listContactItem a i{
+.myContact i{
     font-size: 25px;
     color: white;
 }
-.listContactItem a{
-    text-decoration: none;
-}
-
-.listContactItem a:hover, .listContactItem a:hover i{
+.myContact:hover, .myContact:hover i{
     color: #e945e3;
     transform: scale(1.1);
 }
+
+.messageBox {
+    display: none; 
+    width: max-content;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    font-size: 14px;
+    padding: 5px 10px;
+    background-color: #e945e43a;
+    clip-path: polygon(
+        30% 10%, 40% 0%, 50% 10%, 
+        100% 10%, 100% 100%, 0% 100%, 0% 10%
+    );
+    border-radius: 15px;
+}
+
+
+.listContactItem:nth-last-child(1) .messageBox, .listContactItem:nth-last-child(2) .messageBox{
+    display: none;
+}
+
+/* Show .messageBox when .myContact is hovered */
+.listContactItem:hover .myContact:hover + .messageBox {
+    display: flex;
+}
+
+/* Ensure the last two items (LinkedIn & GitHub) do not show messageBox */
+.listContactItem:nth-last-child(-n+2) .messageBox {
+    display: none !important;
+}
+
+/* .messageBox{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    font-size: 14px;
+    background-color: #e945e43a;
+    clip-path: polygon(
+    30% 10%, 40% 0%, 50% 10%, 
+    100% 10%, 100% 100%, 0% 100%, 0% 10%
+  );
+  border-radius: 15px;
+    
+} */
 
 @media screen and (max-width:1000px) {
     .listContact{
         display: flex;
         flex-direction: column;
+        gap: 30px;
     }
 }
