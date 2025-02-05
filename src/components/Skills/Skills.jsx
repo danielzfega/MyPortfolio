@@ -1,12 +1,10 @@
 import React, { useState, useRef, useEffect } from 'react'
-import { FaHtml5 } from "react-icons/fa";
+import { FaHtml5, FaJava, FaReact } from "react-icons/fa";
 import { IoLogoNodejs } from "react-icons/io5";
 import { IoLogoCss3 } from "react-icons/io";
-import { BiLogoPostgresql } from "react-icons/bi";
-import { FaReact } from "react-icons/fa";
-import { TbBrandJavascript } from "react-icons/tb";
-import { FaJava } from "react-icons/fa";
-import { TbBrandCSharp } from "react-icons/tb";
+import { BiLogoPostgresql, BiLogoTypescript } from "react-icons/bi";
+import { TbBrandJavascript, TbBrandCSharp } from "react-icons/tb";
+import { RiNextjsFill } from "react-icons/ri";
 import './Skills.css'
 
 const Skills = () => {
@@ -46,8 +44,16 @@ const Skills = () => {
       name: 'JavaScript'
     },
     {
+      icon: <BiLogoTypescript />,
+      name: 'TypeScript'
+    },
+    {
       icon: <FaReact />,
       name: 'ReactJs'
+    },
+    {
+      icon: <RiNextjsFill />,
+      name: 'Next Js'
     },
     {
       icon: <IoLogoNodejs />,
