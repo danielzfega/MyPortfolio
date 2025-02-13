@@ -57,7 +57,7 @@ const Home = () => {
         <div className="desc">
           Hello 👋, and welcome to my portfolio website. I am an enthusiastic Software Enginner who is passionate about building projects that combine aesthetics with modern innovation.
         </div>
-        <a href="">Download My CV</a>
+        <a href="" className='downloadCv'>Download My CV</a>
       </div>
 
       <div className="avatar">

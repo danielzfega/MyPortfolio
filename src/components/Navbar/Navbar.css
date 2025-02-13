@@ -175,4 +175,7 @@ span{
         display: flex;
         flex-direction: column;
     }
+    /* .toggle{
+      display: block;
+    } */
 }

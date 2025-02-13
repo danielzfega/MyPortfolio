@@ -44,7 +44,7 @@ section{
     border-left: .7em solid #e945e3;
     padding-left: 2em;
 }
-.content a{
+.downloadCv{
     color: #eee;
     font-size: large;
     font-weight: bold;
@@ -56,7 +56,7 @@ section{
     display: block;
     width: max-content;
 }
-.content a:hover{
+.downloadCv:hover{
     background-color: #eee;
     transition: 1s;
     color: #010824;

@@ -1,9 +1,11 @@
 import React, {useState, useRef, useEffect} from 'react'
-import { FaPersonCircleQuestion, FaEarthAmericas, FaArrowLeft, FaArrowRight } from 'react-icons/fa6'
+import { FaPersonCircleQuestion, FaEarthAmericas, FaArrowLeft, FaArrowRight, FaCode } from 'react-icons/fa6'
 import homestyler from '../../images/homestyler.png'
 import studyhub from '../../images/studyhub.png'
 import weather1 from '../../images/weather1.0.png'
 import productCard from '../../images/productCard.png'
+import fluffscoop from '../../images/fluffscoop.png'
+import fundR from '../../images/fundR.png'
 import './Projects.css'
 import {Swiper, SwiperSlide} from 'swiper/react'
 import { Navigation, Pagination, EffectCoverflow, Autoplay } from 'swiper/modules';
@@ -38,32 +40,52 @@ const Projects = () => {
 
   const [listProjects] = useState([
     {
-      name: 'HomeStyler | Interior Home Decor',
+      name: 'FluffScoop',
+      des: 'A full stack website for ordering desserts and ice-cream',
+      role: 'Full Stack Developer, System design',
+      language: 'NextJS, Typescript, Material UI...',
+      images: fluffscoop,
+      link: ''
+    },
+    {
+      name: 'FundR',
+      des: 'A full stack loan web application for customers with flexible loan types and payment integration',
+      role: 'Full Stack Developer, System Design',
+      language: 'ReactJs, CSS3, Javascript',
+      images: fundR,
+      link: 'https://fund-r.vercel.app/'
+    },
+    {
+      name: 'HomeStyler',
       des: 'A frontend design for an imaginary company that provides home interior decor services based on the SRS given by Aptech Computer Learning as part of a project',
       role: 'Front-end Developer, Team Leader, System design',
       language: 'HTML5, CSS3, ReactJs...',
-      images: homestyler
+      images: homestyler,
+      link: 'https://home-styler-weld.vercel.app'
     },
     {
-      name: 'E-Commerce Product Card',
+      name: 'E-Commerce Card',
       des: 'A re-usable animated eCommerce product card template.',
       role: 'Front-end Developer',
       language: 'HTML5, CSS3, Javascript',
-      images: productCard
+      images: productCard,
+      link: ''
     },
     {
-      name: 'StudyHub | E-Learning Website',
+      name: 'StudyHub',
       des: 'Prototypes for About page and Blog page designs for a modern fullstack E-Learning Website project.',
-      role: 'Front-end Developer, System design',
+      role: 'Front-end Developer, Collaborator, System design',
       language: 'HTML5, CSS3, ReactJs...',
-      images: studyhub
+      images: studyhub,
+      link: ''
     },
     {
       name: 'Weather App v1.0 ',
       des: 'A real time weather tracking web application which uses an API to get current weather data and displays to the user.',
       role: 'Front-end Developer, system analysis and design',
       language: 'HTML5, CSS3, Javascript, ReactJs...',
-      images: weather1
+      images: weather1,
+      link: ''
     }
   ])
   return (
@@ -115,25 +137,35 @@ const Projects = () => {
 
                       <div className="contentDesc">{value.des}</div>
 
-                      <div className="mission">
-                        <div className='missionIcon'><FaPersonCircleQuestion/></div>
+                        <div className="mission">
+                          <div className='missionIcon'><FaPersonCircleQuestion/></div>
 
-                        <div className='projectInfo'>
-                          <h4>Role</h4>
-                          <div className="missionTxt">{value.role}</div>
+                          <div className='projectInfo'>
+                            <h4>Role</h4>
+                            <div className="missionTxt">{value.role}</div>
+                          </div>
+
                         </div>
 
-                      </div>
+                        <div className="mission">
+                          <div className='missionIcon'><FaEarthAmericas/></div>
 
-                      <div className="mission">
-                        <div className='missionIcon'><FaEarthAmericas/></div>
-
-                        <div className='projectInfo'>
-                          <h4>Language</h4>
-                          <div className="missionTxt">{value.language}</div>
+                          <div className='projectInfo'>
+                            <h4>Language</h4>
+                            <div className="missionTxt">{value.language}</div>
+                          </div>
+                          
                         </div>
-                        
-                      </div>
+
+                        <div className="mission">
+                          <div className='missionIcon'><FaCode/></div>
+
+                          <div className='projectInfo'>
+                            <h4>Link</h4>
+                            <div className="projectLink"> <a href={value.link} id='theLink'>{value.link}</a></div>
+                          </div>
+                          
+                        </div>
                     </div>
                   </div>
                 </SwiperSlide>
