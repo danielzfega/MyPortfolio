@@ -21,7 +21,8 @@ header{
     backdrop-filter: blur(10px);
 } 
 .logo h1{
-    font-family: 'SquareGame', sans-serif;
+    /* font-family: 'SquareGame', sans-serif; */
+    font-family: MuseoModerno, serif;
     /* border: 2px solid antiquewhite; */
 }
 .logo, nav{
@@ -49,7 +50,8 @@ span{
 }
 .navLinks{
     font-size: 30px;
-    font-family: 'SquareGame', sans-serif;
+    /* font-family: 'SquareGame', sans-serif; */
+    font-family: MuseoModerno, serif;
 }
 .navLinks:hover{
     color: #e945e3;
