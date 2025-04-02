@@ -157,21 +157,42 @@ span{
         flex-direction: column;
         /* border: 2px solid wheat; */
         position: absolute;
-        top: 100px;
+        top: 0px;
         align-items: start;
-        right: 0px;
+        justify-content: start;
+        left: 0px;
         width: 160px;
-        height: 250px;
+        height: 100vh;
+        /* height: 250px; */
         border-radius: 0;
-        background-color: rgba(0, 0, 0, 0.372);
+        background-color: #010824;
+        animation: slideInFromLeft 0.5s ease-out forwards;
+        /* background-color: rgba(0, 0, 0, 0.372); */
         z-index: 1000;
         padding: 20px 0;
     }
+    @keyframes slideInFromLeft {
+      from {
+        transform: translateX(-100%);
+        opacity: 0;
+      }
+      to {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+    
+    /* .slide-in {
+      animation: slideInFromLeft 0.5s ease-out forwards;
+    } */
+    
     .navLinks{
         text-align: start;
         flex-direction: column;
-        padding-left: 10px;
+        /* padding-left: 30px; */
+        width: 80%;
         /* border: 1px solid white; */
+        height: 70px;
     }
     .nav.open{
         display: flex;
