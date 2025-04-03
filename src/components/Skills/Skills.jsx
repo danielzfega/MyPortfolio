@@ -103,8 +103,8 @@ import reactjs from "../../images/react.png";
 import nextjs from "../../images/nextjs.png";
 import angular from "../../images/angular.png";
 import reactNative from "../../images/reactNative.png";
-import c from "../../images/c2.png";
-import csharp from "../../images/csharp.svg";
+import c from "../../images/c.png";
+import csharp from "../../images/Csharp.png";
 import java from "../../images/java.png";
 import php from "../../images/php.png";
 
