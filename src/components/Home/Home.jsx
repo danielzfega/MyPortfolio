@@ -73,7 +73,7 @@ const Home = () => {
               shadowScale: 0.94,
             }}
             modules={[Pagination, EffectCube, Navigation, Autoplay]}
-            className="mySwiper"
+            className="myHomeSwiper"
             autoplay={{
               delay: 3000, // 3 seconds delay between slides
               disableOnInteraction: false, // Keeps autoplay running even after user interaction

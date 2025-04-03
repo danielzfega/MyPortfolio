@@ -1,0 +1,7 @@
+:root {
+    --swiper-theme-color: #e945e3 !important;
+    --swiper-navigation-size: 50px !important;
+}
+.swiper-pagination-bullet{
+    background: (--swiper-pagination-bullet-inactive-color, #909090) !important;
+}

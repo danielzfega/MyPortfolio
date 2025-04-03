@@ -14,16 +14,8 @@
     max-width: 500px;
     margin: auto;
 }
-.skillList{
-    margin-top: 50px;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, 250px);
-    /* grid-template-rows: repeat(auto-fill, 200px); */
-    justify-content: center;
-    gap: 3vw;
-    /* position: relative; */
-}
-.skillItem{
+
+/* .skillItem{
     background-color: rgba(109, 0, 109, 0.119);
     backdrop-filter: blur(20px);
     background-image: linear-gradient(
@@ -31,7 +23,6 @@
         rgba(255, 255, 255, 0.3),
         rgba(0, 0, 0, 0.2)
     );
-    /* background-size: 30px; */
     border-radius: 20px;
     padding: 20px;
 }
@@ -43,4 +34,64 @@
 }
 .skillItem:hover{
     transform: scale(1.08);
+} */
+ .skillList{
+    margin-top: 30px;
+ }
+.mySwiper {
+    width: 90%;
+    height: 200px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: rgb(255, 255, 255);
+  }
+.mySwiper .swiper-slide {
+    filter: blur(10px); 
+    transition: filter 0.5s ease-in-out;
 }
+.swiper-3d .swiper-slide-shadow-left{
+    display: none !important;
+}
+.swiper-3d .swiper-slide-shadow-right{
+    display: none !important;
+}
+
+.mySwiper .swiper-slide-active {
+    filter: blur(); 
+}
+.mySwiper  .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+  }
+  
+ .mySwiper .swiper-slide img {
+    display: block;
+    /* width: 100%; */
+    width: 200px; 
+    height: 200px;
+    object-fit: contain;
+    /* border: 1px solid white; */
+  }
+  
+/* .skillItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: 1px solid white;
+    width: 70%;
+  }
+  
+  .skillImage {
+    width: 200px; 
+    height: 200px;
+    object-fit: contain;
+    border: 1px solid white;
+  }
+.mySwiper{
+    border: 1px solid white;
+    width: 80%;
+} */

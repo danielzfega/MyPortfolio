@@ -99,7 +99,7 @@ const Projects = () => {
         </div>
         <div className="list">
           <Swiper
-            effect={'coverflow'}
+            // effect={'coverflow'}
             grabCursor = {true}
             centeredSlides = {true}
             loop = {true}
@@ -108,19 +108,23 @@ const Projects = () => {
               delay: 4500, // 3 seconds delay between slides
               disableOnInteraction: false, // Keeps autoplay running even after user interaction
             }}
-            coverflowEffect={{
-              rotate: 0,
-              stretch: 0,
-              depth: 100,
-              modifier: 2.5,
+            // coverflowEffect={{
+            //   rotate: 0,
+            //   stretch: 0,
+            //   depth: 100,
+            //   modifier: 2.5,
+            // }}
+            pagination={{
+              dynamicBullets: true,
             }}
-            pagination = {{el: '.swiperPagination', clickable: true}}
+            // pagination = {{el: '.swiperPagination', clickable: true}}
             // navigation = {{
             //   nextEl: 'swiperBtnNext', 
             //   prevEl: 'swiperBtnPrev',
             //   clickable: true,
             // }}
-            modules={[EffectCoverflow, Pagination, Navigation, Autoplay]}
+            modules={[Pagination, Autoplay]}
+            // modules={[EffectCoverflow, Pagination, Navigation, Autoplay]}
             className='swiperContainer'
           >
             {
