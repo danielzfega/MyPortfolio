@@ -107,7 +107,7 @@ import c from "../../images/c.png";
 import csharp from "../../images/Csharp.png";
 import java from "../../images/java.png";
 import php from "../../images/php.png";
-import lua from '../../images/lua.png'
+import lua from '../../images/Lua.png'
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
