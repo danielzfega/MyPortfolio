@@ -107,6 +107,7 @@ import c from "../../images/c.png";
 import csharp from "../../images/Csharp.png";
 import java from "../../images/java.png";
 import php from "../../images/php.png";
+import lua from '../../images/lua.png'
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -144,6 +145,7 @@ const Skills = () => {
     { image: javascript },
     { image: typescript },
     { image: nodejs },
+    { image: lua },
     { image: sql },
     { image: reactjs },
     { image: nextjs },

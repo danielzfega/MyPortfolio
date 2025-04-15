@@ -6,6 +6,7 @@ import weather1 from '../../images/weather1.0.png'
 import productCard from '../../images/productCard.png'
 import fluffscoop from '../../images/fluffscoop.png'
 import fundR from '../../images/fundR.png'
+import zaiganAI from '../../images/ZaiganAI.png'
 import './Projects.css'
 import {Swiper, SwiperSlide} from 'swiper/react'
 import { Navigation, Pagination, EffectCoverflow, Autoplay } from 'swiper/modules';
@@ -40,6 +41,14 @@ const Projects = () => {
 
   const [listProjects] = useState([
     {
+      name: 'ZaiganAI',
+      des: 'A fully autonomous financial transactions anomaly detection AI model',
+      role: 'Full Stack Developer, AI / ML Engineer',
+      language: 'Angular, CSS3, Typescript',
+      images: zaiganAI,
+      link: 'https://zaigan-ai.vercel.app/home'
+    },
+    {
       name: 'FluffScoop',
       des: 'A full stack website for ordering desserts and ice-cream',
       role: 'Full Stack Developer, System design',
@@ -57,7 +66,7 @@ const Projects = () => {
     },
     {
       name: 'HomeStyler',
-      des: 'A frontend design for an imaginary company that provides home interior decor services based on the SRS given by Aptech Computer Learning as part of a project',
+      des: 'A frontend design for an imaginary company that provides home interior decor services based on the SRS given by Aptech Computer Learning as part of a semester project',
       role: 'Front-end Developer, Team Leader, System design',
       language: 'HTML5, CSS3, ReactJs...',
       images: homestyler,
