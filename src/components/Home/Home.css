@@ -4,27 +4,28 @@
     src: url('../../fonts/Square Game.woff2') format('woff2'), 
          url('../../fonts/Square Game.ttf') format('truetype');
 }
-section{
-    width: min(1300px, 100%);
-    margin: auto;
-    padding: 50px;
-    box-sizing: border-box;
-}
 .home{
     /* padding-top: 50px; */
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 50px;
-    justify-content: space-between;
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    /* grid-template-columns: repeat(2, 1fr); */
+    gap: 100px;
+    border: 1px solid black;
+    justify-content: center;
     align-items: center;
 }
-.content{
+.intro{
     font-family: MuseoModerno, serif;
+    border: 1px solid black;
+    width: 400px;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
 }
 .name{
-    font-size: 80px;
-    font-weight: bold;
-    line-height: 1em;
+    font-size: 50px;
+
 }
 .nameSpan{
     background-image: linear-gradient(to right, #7BE728, #F3265F, #7F40AC);
@@ -38,17 +39,12 @@ section{
         background-position: 200% center;
     }
 }
-.desc{
-    color: #eee5;
-    margin: 30px 0;
-    border-left: .7em solid #e945e3;
-    padding-left: 2em;
-}
 .downloadCv{
     color: #eee;
     font-size: large;
     font-weight: bold;
     text-decoration: none;
+    background-color: black;
     border: 1px solid #eee;
     padding: 20px 30px;
     border-radius: 40px;
@@ -57,37 +53,34 @@ section{
     width: max-content;
 }
 .downloadCv:hover{
-    background-color: #eee;
+    background-color: #b8b8b8;
     transition: 1s;
     color: #010824;
     transform: scale(1.08);
 }
-.avatar{
-    text-align: right;
-}
-.card{
+.myPic{
     display: inline-flex;
     flex-direction: column;
-    width: min(100%, 400px);
+    width: 300px;
     box-shadow: 0 150px 150px #e945e333;
     transition: 0.5s;
 }
 .card:hover{
     box-shadow: 0 150px 150px #e945e333;
 }
-.card img{
-    /* border: 3px solid wheat; */
+.myPic img{
+    border: 3px solid rgb(239, 0, 0);
     width: 100%;
     height: min(700px, 50vh);
-    object-fit: cover;
+    /* object-fit: cover;
     object-position: top;
     clip-path: polygon(
         81% 0, 100% 18%, 100% 1000%, 0 100%, 0 0
-    );
+    ); */
 }
 .info{
     background-color: #0000007d;
-    color: antiquewhite;
+    color: black;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;

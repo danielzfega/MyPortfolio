@@ -108,6 +108,8 @@ import csharp from "../../images/Csharp.png";
 import java from "../../images/java.png";
 import php from "../../images/php.png";
 import lua from '../../images/Lua.png'
+import spring from '../../images/spring.png'
+import springBoot from '../../images/spring-boot.png'
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -154,6 +156,8 @@ const Skills = () => {
     { image: c },
     { image: csharp },
     { image: java },
+    {image: spring},
+    {image: springBoot},
     { image: php },
   ];
 

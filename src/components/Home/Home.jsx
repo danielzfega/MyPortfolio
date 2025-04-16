@@ -1,18 +1,18 @@
 import React, {useState, useRef, useEffect} from 'react'
 import avatar from '../../images/avatar.png'
-import myPic from '../../images/myPic.jpg'
+import myPic from '../../images/myPic.png'
 import './Home.css'
 import { FaCalendarAlt, FaLaptopCode } from "react-icons/fa";
 import { GiNigeria } from "react-icons/gi";
 import { FaMale } from "react-icons/fa";
-import {Swiper, SwiperSlide} from 'swiper/react'
-import {Navigation, Pagination, Autoplay, EffectCube} from 'swiper/modules';
+// import {Swiper, SwiperSlide} from 'swiper/react'
+// import {Navigation, Pagination, Autoplay, EffectCube} from 'swiper/modules';
 
 
-import 'swiper/css';
-import 'swiper/css/pagination';
-import 'swiper/css/navigation';
-import 'swiper/css/effect-cube'
+// import 'swiper/css';
+// import 'swiper/css/pagination';
+// import 'swiper/css/navigation';
+// import 'swiper/css/effect-cube'
 
 
 const Home = () => {
@@ -38,32 +38,28 @@ const Home = () => {
       };
     }, []);
 
-  const [swapPics] = useState([
-      {
-        picImg: avatar
-      },
-      {
-        picImg: myPic
-      }
-  ])
-
   return (
-    <section className={`home animation ${isVisible ? 'animation-active' : ''}`} ref={homeRef}>
+    <div className={`home animation ${isVisible ? 'animation-active' : ''}`} ref={homeRef}>
 
-      <div className="content">
-        <div className="name">
-          MY NAME IS <span className='nameSpan'>DANIELS FEGA</span>
-        </div>
-        <div className="desc">
-          Hello 👋, and welcome to my portfolio website. I am an enthusiastic Software Enginner who is passionate about building projects that combine aesthetics with modern innovation.
-        </div>
+      <div className="intro">
+        <h1 className='name'>MY NAME IS <span className='nameSpan'>DANIELS FEGA</span></h1>
+        <p>Hello 👋, and welcome to my portfolio website. I am an enthusiastic Software Enginner who is passionate about building projects that combine aesthetics with modern innovation.</p>
         <a href="" className='downloadCv'>Download My CV</a>
       </div>
 
-      <div className="avatar">
-        <div className="card">
+      <div className="myPic">
+        <img src={myPic} alt="" />
+      </div>
 
-          <Swiper
+    </div>
+  )
+}
+
+export default Home
+
+
+
+{/* <Swiper
             effect={'cube'}
             // grabCursor={true}
             cubeEffect={{
@@ -86,19 +82,4 @@ const Home = () => {
                 </SwiperSlide>
               
             ))}
-          </Swiper>
-
-          <div className="info">
-            <div><i className='code'><FaLaptopCode /></i> Developer</div>
-            <div><i className='nigeria'><GiNigeria /></i> Nigerian</div>
-            <div><i className="calendar"><FaCalendarAlt /></i> 11th November</div>
-            <div><i className='people'><FaMale /> </i>Male</div>
-          </div>
-        </div>
-      </div>
-
-    </section>
-  )
-}
-
-export default Home
+          </Swiper> */}
