@@ -16,35 +16,74 @@ import { FaMale } from "react-icons/fa";
 
 
 const Home = () => {
-  const homeRef = useRef();
-  const [isVisible, setIsVisible] = useState(false)
+  const [typedText, setTypedText] = useState('');
+  const [isVisible, setIsVisible] = useState(false);
+  const [hasAnimated, setHasAnimated] = useState(false);
+  useEffect(() => {
+    if (!hasAnimated) return;
   
-    useEffect(() => {
-      const observer = new IntersectionObserver(
-        ([entry]) => {
-          setIsVisible(entry.isIntersecting);
-        },
-        { threshold: 0.3 } // Trigger when 30% of the section is visible
-      );
+    const fullText = "hhi, Fega here.";
+    let index = 0;
   
-      if (homeRef.current) {
-        observer.observe(homeRef.current);
+    const typingInterval = setInterval(() => {
+      setTypedText((prev) => prev + fullText.charAt(index));
+      index++;
+  
+      if (index >= fullText.length) {
+        clearInterval(typingInterval);
       }
+    }, 200); // Adjust typing speed here
   
-      return () => {
-        if (homeRef.current) {
-          observer.unobserve(homeRef.current);
+    return () => clearInterval(typingInterval);
+  }, [hasAnimated]);
+
+
+
+  const homeRef = useRef();
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting && !hasAnimated) {
+          setHasAnimated(true);
         }
-      };
-    }, []);
+      },
+      { threshold: 0.3 }
+    );
+  
+    if (homeRef.current) {
+      observer.observe(homeRef.current);
+    }
+  
+    return () => {
+      if (homeRef.current) {
+        observer.unobserve(homeRef.current);
+      }
+    };
+  }, [hasAnimated]);
 
   return (
-    <div className={`home animation ${isVisible ? 'animation-active' : ''}`} ref={homeRef}>
-
+    // <div className={`home animation ${isVisible ? 'animation-active' : ''}`} ref={homeRef}>
+    <div className={`home animation ${hasAnimated ? 'animation-active' : ''}`} ref={homeRef}>
+    {/* <div className="home" ref={homeRef}> */}
       <div className="helloBanner">
-        <p className="hiTxt"><b>hi, <span className="hiTxtSpan">Fega</span> here.</b></p>
-        <p>Fullstack Web Developer, App Developer, Roblox Dev...</p>
-        <p>Hello 👋, and welcome to my portfolio website. I am an enthusiastic Software Enginner, currently based in Nigeria who is passionate about building projects that combine aesthetics with modern innovation, AI and startups.</p>
+        <p className="hiTxt">
+          <b>
+            {
+              typedText.split("Fega").map((part, index, array) => (
+                <React.Fragment key={index}>
+                  {part}
+                  {index < array.length - 1 && <span className="hiTxtSpan">Fega</span>}
+                </React.Fragment>
+              ))
+            }
+          </b>
+          <span className="blinking-cursor">|</span>
+        </p>
+
+
+        {/* <p className="hiTxt"><b>hi, <span className="hiTxtSpan">Fega</span> here.</b></p> */}
+        <p><i>Fullstack Web Developer, App Developer, Roblox Dev...</i></p>
+        <p>Hello 👋, and welcome to my portfolio website. I am an enthusiastic Software Engineer, currently based in Nigeria who is passionate about building projects that combine aesthetics with modern innovation, AI and startups.</p>
 
         <a href="" className='downloadCv'>Download My CV</a>
       </div>
