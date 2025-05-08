@@ -13,6 +13,7 @@ header{
     /* transform: translate(-50%); */
     display: flex;
     justify-content: space-between;
+    background-color: #0a192f;
     /* padding-left: 60px; */
     align-items: center;
     /* gap: 50px; */
@@ -50,7 +51,7 @@ nav{
     justify-content: center;
     /* border: 2px solid antiquewhite; */
 }
-span{
+.navSpan{
     cursor: pointer;
     /* background-color: antiquewhite; */
     height: 100%;
@@ -64,13 +65,18 @@ span{
 }
 .navLinks, .leftNav p, .rightNav i{
     font-size: 24px;
+    cursor: pointer;
     /* font-family: 'SquareGame', sans-serif; */
 }
 .navLinks:hover{
-    color: #e945e3;
-    border-bottom: 2px solid #e945e3;
+    color: #64ffda;
+    border-bottom: 2px solid #64ffda;
+    /* transition: 0.6s; */
 }
-
+.rightNav i:hover{
+  color: #64ffda;
+  transition: 1s;
+}
 .menu-toggle {
     display: block;
     font-size: 30px;

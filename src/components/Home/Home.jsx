@@ -42,9 +42,11 @@ const Home = () => {
     <div className={`home animation ${isVisible ? 'animation-active' : ''}`} ref={homeRef}>
 
       <div className="helloBanner">
-        <p className="hiTxt">hi, <span className="hiTxtSpan">Fega</span> here.</p>
+        <p className="hiTxt"><b>hi, <span className="hiTxtSpan">Fega</span> here.</b></p>
         <p>Fullstack Web Developer, App Developer, Roblox Dev...</p>
         <p>Hello 👋, and welcome to my portfolio website. I am an enthusiastic Software Enginner, currently based in Nigeria who is passionate about building projects that combine aesthetics with modern innovation, AI and startups.</p>
+
+        <a href="" className='downloadCv'>Download My CV</a>
       </div>
 
       {/* <div className="intro">
