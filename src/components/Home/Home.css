@@ -11,9 +11,35 @@
     display: flex;
     /* grid-template-columns: repeat(2, 1fr); */
     gap: 100px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     justify-content: center;
     align-items: center;
+    margin-top: 100px;
+}
+.helloBanner{
+    color: #ccd6f6;
+    background-image: url('../../images/hello.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.621);
+    background-blend-mode: darken;
+    width: 70%;
+    /* width: fit-content; */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 10px;
+}
+.hiTxt{
+    font-size: 30px;
+    border: 1px solid wheat;
+}
+.hiTxtSpan{
+    color: #64ffda;
 }
 .intro{
     font-family: MuseoModerno, serif;

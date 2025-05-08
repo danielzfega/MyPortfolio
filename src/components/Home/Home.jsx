@@ -42,9 +42,12 @@ const Home = () => {
     <div className={`home animation ${isVisible ? 'animation-active' : ''}`} ref={homeRef}>
 
       <div className="helloBanner">
-        <img src={hello} alt="" />
+        <p className="hiTxt">hi, <span className="hiTxtSpan">Fega</span> here.</p>
+        <p>Fullstack Web Developer, App Developer, Roblox Dev...</p>
+        <p>Hello 👋, and welcome to my portfolio website. I am an enthusiastic Software Enginner, currently based in Nigeria who is passionate about building projects that combine aesthetics with modern innovation, AI and startups.</p>
       </div>
-      <div className="intro">
+
+      {/* <div className="intro">
         <h1 className='name'>MY NAME IS <span className='nameSpan'>DANIELS FEGA</span></h1>
         <p>Hello 👋, and welcome to my portfolio website. I am an enthusiastic Software Enginner who is passionate about building projects that combine aesthetics with modern innovation.</p>
         <a href="" className='downloadCv'>Download My CV</a>
@@ -52,7 +55,7 @@ const Home = () => {
 
       <div className="myPic">
         <img src={myPic} alt="" />
-      </div>
+      </div> */}
 
     </div>
   )
