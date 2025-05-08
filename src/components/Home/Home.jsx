@@ -1,5 +1,5 @@
 import React, {useState, useRef, useEffect} from 'react'
-import avatar from '../../images/avatar.png'
+import hello from '../../images/hello.jpg'
 import myPic from '../../images/myPic.png'
 import './Home.css'
 import { FaCalendarAlt, FaLaptopCode } from "react-icons/fa";
@@ -41,6 +41,9 @@ const Home = () => {
   return (
     <div className={`home animation ${isVisible ? 'animation-active' : ''}`} ref={homeRef}>
 
+      <div className="helloBanner">
+        <img src={hello} alt="" />
+      </div>
       <div className="intro">
         <h1 className='name'>MY NAME IS <span className='nameSpan'>DANIELS FEGA</span></h1>
         <p>Hello 👋, and welcome to my portfolio website. I am an enthusiastic Software Enginner who is passionate about building projects that combine aesthetics with modern innovation.</p>

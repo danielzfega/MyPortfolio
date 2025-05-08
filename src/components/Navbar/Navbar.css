@@ -6,31 +6,45 @@
 header{
     position: sticky;
     width: min(1300px, 100%);
-    height: 100px;
+    height: 80px;
     top: 0;
+    /* background-color: rebeccapurple; */
     /* border: 2px solid rgb(193, 29, 29); */
     /* transform: translate(-50%); */
     display: flex;
-    justify-content: space-evenly;
-    padding-left: 60px;
+    justify-content: space-between;
+    /* padding-left: 60px; */
     align-items: center;
     /* gap: 50px; */
     /* padding: 20px; */
     box-sizing: border-box;
     z-index: 1000;
     backdrop-filter: blur(10px);
+    color: #ccd6f6;
 } 
-.logo h1{
-    /* font-family: 'SquareGame', sans-serif; */
-    font-family: MuseoModerno, serif;
-    /* border: 2px solid antiquewhite; */
+.leftNav{
+  /* border: 1px solid wheat; */
+  display: flex;
+  align-items: center;
+  width: 500px;
+  height: 100%;
+  justify-content: center;
 }
-.logo, nav{
+.rightNav{
+  /* border: 1px solid wheat; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 100%;
+}
+.leftNav, nav, .rightNav{
     display: flex;
     gap: 30px;
 }
 nav{
     height: 100%;
+    
     display: flex;
     align-items: center;
     justify-content: center;
@@ -48,10 +62,9 @@ span{
     /* color: #e945e3; */
     text-shadow: 0 0 5px #7A43B6;
 }
-.navLinks{
-    font-size: 30px;
+.navLinks, .leftNav p, .rightNav i{
+    font-size: 24px;
     /* font-family: 'SquareGame', sans-serif; */
-    font-family: MuseoModerno, serif;
 }
 .navLinks:hover{
     color: #e945e3;
@@ -126,12 +139,12 @@ span{
     transform: rotate(180deg);
   }
 
-@media screen and (max-width: 1200px) {
+/* @media screen and (max-width: 1200px) {
     .navLinks, .logo > h1{
         font-size: 30px;
     }
 
-}
+} */
 
 @media screen and (max-width: 1100px){
     header{

@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
 import './Navbar.css'
+import { MdAttachEmail } from "react-icons/md";
+import { FaLinkedin, FaGithub } from "react-icons/fa";
 // import Contact from '../Contact/Contact';
 
 const Navbar = ({scrollToSection, refs}) => {
@@ -21,25 +23,31 @@ const Navbar = ({scrollToSection, refs}) => {
   
   return (
     <header>
-        <div className="logo">
-            <h1>Daniels Fega</h1>
-        </div>
-        <nav className={`nav ${isMenuOpen ? 'open' : ''}`}>
-            {
-                listNav.map((value, key) => (
-                    <span 
-                        id='navLinks'
-                        className='navLinks'
-                        key={key} 
-                        // className='active'
-                        onClick={() => scrollToSection(value.ref)}
+        <div className="leftNav">
+            <p>Daniels Fega</p>
+            <nav className={`nav ${isMenuOpen ? 'open' : ''}`}>
+                {
+                    listNav.map((value, key) => (
+                        <span 
+                            id='navLinks'
+                            className='navLinks'
+                            key={key} 
+                            // className='active'
+                            onClick={() => scrollToSection(value.ref)}
 
-                    >
-                        {value.name}
-                    </span>
-                ))
-            }
-        </nav>
+                        >
+                            {value.name}
+                        </span>
+                    ))
+                }
+            </nav>
+        </div>
+
+        <div className="rightNav">
+            <i><MdAttachEmail/></i>
+            <i><FaGithub/></i>
+            <i><FaLinkedin/></i>
+        </div>
 
         <div className="menu-toggle">
             <input type="checkbox" id="checkbox" checked={isMenuOpen} onChange={toggleMenu} />
