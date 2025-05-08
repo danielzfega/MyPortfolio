@@ -1,13 +1,19 @@
-@font-face {
+
+@import url('https://fonts.googleapis.com/css2?family=NTR&display=swap');
+
+/* @font-face {
   font-family: 'SquareGame';
   src: url('./fonts/Square Game.woff2') format('woff2'), 
        url('./fonts/Square Game.ttf') format('truetype');
-}
+} */
 
+*{
+  font-family: "NTR", sans-serif;
+}
 body{
   margin: 0;
   font-family: Poppins, sans-serif;
-  /* background-color: #010824; */
+  background-color: #0a192f;
   color: black;
   width: 100%;
   height: 100vh;
@@ -19,7 +25,7 @@ body{
   repeating-linear-gradient(
     to bottom, transparent 0 49px, #eee1 49px 50px
   ); */
-  &::before{
+  /* &::before{
     position: fixed;
     width: 400px;
     height: 400px;
@@ -33,7 +39,7 @@ body{
     border-radius: 50% 50% 0 0;
     pointer-events: none;
     filter: blur(250px)
-  }
+  } */
 }
 
 main{

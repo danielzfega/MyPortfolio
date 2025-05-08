@@ -49,21 +49,7 @@
     /* background-color: #473bb441; */
     /* background-color: rgb(194, 194, 194); */
   }
-  .skills::before{
-    position: fixed;
-    width: 400px;
-    height: 300px;
-    content: '';
-    background-image: linear-gradient(
-      to right, #ff60fa, #b168ff
-    );
-    z-index: -1;
-    top: 200px;
-    left: calc(50% - 200px);
-    border-radius: 50% 50% 0 0;
-    pointer-events: none;
-    filter: blur(250px)
-  }
+  
 .mySwiper .swiper-slide {
     filter: blur(10px); 
     transition: filter 0.5s ease-in-out;
