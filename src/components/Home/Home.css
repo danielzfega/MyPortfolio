@@ -180,27 +180,13 @@
     color: darksalmon;
 }
 
-@media screen and (max-width: 1025px) {
-    .name{
-        text-align: start;
-        font-size: 70px;
-    }
-}
-@media screen and (max-width: 955px) {
+@media screen and (max-width: 1230px) {
     .home{
-        display: flex;
-        flex-direction: column;
+        height: 500px;
     }
 }
-@media screen and (max-width: 600px) {
-    .myHomeSwiper, .avatar{
-        width: 300px;
-        /* border: 2px solid wheat; */
-    }
-    .info{
-        text-align: start;
-    }
-    .info div{
-        font-size: 16px;
+@media screen and (max-width: 935px) {
+    .helloBanner{
+        width: 90%;
     }
 }
