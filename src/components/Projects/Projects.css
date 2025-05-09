@@ -1,187 +1,80 @@
-@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:ital,wght@0,100..900;1,100..900&display=swap');
-.title{
-    font-size: 5vw;
-    text-align: center;
-    font-family: MuseoModerno, serif;
-    margin-top: 100px;
-}
-.projectsDesc{
-    color: #eee5;
-    text-align: center;
-    max-width: 500px;
-    margin: auto;
-    font-family: MuseoModerno, serif;
-}
-.list{
-    margin-top: 50px;
-    /* width: 1200px; */
-    /* background-color: aqua; */
-}
-.item{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
-    gap: 20px;
-}
-.images{
-    background-image: linear-gradient(-45deg, #473bb4, #be24a9);
-    padding: 40px;
-    text-align: center;
-    border-radius: 20px;
-    overflow: hidden;
-    display: flex;
-    /* align-items: center;
-    justify-content: center; */
-}
-.images img{
-    height: 350px;
-    /* border-radius: 80px; */
-    /* box-shadow: 0 20px 40px #010824; */
-}
-.content{
-    display: flex;
-    flex-direction: column;
-    /* border: 2px solid sandybrown; */
-}
-.content h3{
-    font-size: 3em;
-    margin: 0;
-}
-.contentDesc{
-    text-align: left;
+.projects{
+    color: #ccd6f6;
     width: 100%;
-    
-}
-.projectInfo{
-    display: flex;
-    /* border: 2px solid #be24a9; */
-    justify-content: center;
-    height: 100%;
-    line-height: 0.5;
-    width: 80%;
-}
-
-
-.mission{
+    height: 750px;
     /* border: 1px solid white; */
     display: flex;
-    /* grid-template-columns: 70px 1fr; */
+    flex-direction: column;
     align-items: center;
-    /* text-align: ; */
-    gap: 10px;
-    margin-top: 10px;
-    height: 100px;
-    /* border: 2px solid white; */
 }
-.projectLink{
-    /* border: 1px solid wheat; */
-    width: 100%;
-    /* height: 30px; */
-    display: flex;
-    align-items: start;
-    justify-content: center;
+.projectTitle{
+    width: 90%;
+    font-size: 50px;
+    /* border: 1px solid white; */
+    margin: 0;
 }
-.projectLink a{
-    border: 0;
-    text-decoration: none;
-    color: white;
-    cursor: pointer;
+.projectBox{
+    width: 90%;
+    height: 90%;
+    background-color: rgba(186, 255, 232, 0.276);
+    /* flex-grow: 1; */
+    /* flex-wrap: wrap; */
+    display: grid;
+    
+    /* grid-row-gap: 20px; */
+    /* align-items: center; */
+    grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+    /* gap: 10px; */
+    row-gap: 2rem;
+    /* padding: 1rem; */
 }
-.projectLink a:hover{
-    transition: 0.4s;
-    transform: scale(0.9);
-}
-.mission div:nth-child(1){
-    background-color: #eee3;
-    padding: 20px;
-    font-size: 20px;
-    border-radius: 15px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.mission div:nth-child(2){
-    /* background-color: aquamarine; */
+
+.project{
+    width: 90%;
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
-    padding-bottom: 10px;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: #112240;
+    border-radius: 10px;
 }
-.item:nth-child(2n) .images{
-    grid-column-start: 2;
+.projectHead{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* height: 10%; */
+    height: 50px;
+    /* background-color: white; */
 }
-.item:nth-child(2n) .content{
-    grid-column-start: 1;
-    grid-row-start: 1;
+.projectHead i{
+    font-size: 26px;
+    /* height: 100%; */
 }
-
-
-
-@media screen and (max-width: 1130px) {
-    .item{
-        display: flex;
-        flex-direction: column;
-    }
+.projectName{
+    font-size: 25px !important;
+    margin: 0;
 }
-@media screen and (max-width: 910px) {
-    .images img{
-        width: 600px;
-        height: 300px;
-    }
-    .images{
-        width:500px;
-        /* height: 400px; */
-    }
+.linkIcons{
+    /* border: 1px solid black; */
+    height: 100%;
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
-@media screen and (max-width: 784px) {
-    .images img{
-        width: 100%;
-        height: 230px;
-        /* border: 2px solid white; */
-    }
-    .images{
-        width:400px;
-        /* border: 2px solid aquamarine; */
-    }
+.projectContent{
+    /* background-color: aqua; */
+    width: 90%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    gap: 20px;
 }
-
-@media screen and (max-width: 684px) {
-    .images img{
-        width: 150%;
-        height: 160px;
-        /* border: 2px solid white; */
-    }
-    .images{
-        width:300px;
-        /* border: 2px solid aquamarine; */
-    }
-    .content h3{
-        font-size: 40px;
-    }
-}
-
-@media screen and (max-width: 580px) {
-    .projectInfo div{
-        font-size: 15px;
-        line-height: 1;
-    }
-    .missionIcon{
-        height: 40px;
-        width: 40px;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .images img{
-        width: 150%;
-        height: 160px;
-    }
-    .images{
-        width:200px;
-    }
-    .content h3{
-        font-size: 28px;
-    }
+.projectContent p{
+    font-size: 20px;
+    margin: 0;
+    line-height: 30px;
 }

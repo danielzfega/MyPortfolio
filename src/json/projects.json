@@ -4,7 +4,7 @@
         "name": "Youtube Redesign Concept",
         "desc": "A community proposal for Youtube's redesign, featuring cleaner UI, designed by Juxtopposed on YT",
         "languages": "React.js, CSS3",
-        "githubLink": "www.google.com",
+        "githubLink": "https://github.com/OghenefegaOmajene/Youtube-Redesign-Concept",
         "liveDemo": "www.tiktok.com",
         "role": "FullStack Developer"
     },
@@ -13,8 +13,8 @@
         "name": "FluffScoop",
         "desc": "A full stack website for ordering desserts and ice-cream",
         "languages": "Next.jS, Typescript, Material UI",
-        "githubLink": "www.google.com",
-        "liveDemo": "www.tiktok.com",
+        "githubLink": "https://github.com/OghenefegaOmajene/FluffScoop",
+        "liveDemo": "https://fluffscoop.vercel.app/",
         "role": "FullStack Developer"
     },
     {
@@ -22,8 +22,8 @@
         "name": "Finomaly",
         "desc": "A fully autonomous financial transactions anomaly detection AI model",
         "languages": "Angular, CSS3, Typescript, Python",
-        "githubLink": "www.google.com",
-        "liveDemo": "www.tiktok.com",
+        "githubLink": "https://github.com/OghenefegaOmajene/Finomaly",
+        "liveDemo": "https://finomaly.vercel.app/",
         "role": "FullStack Developer, AI/ML Engineer"
     },
     {
@@ -31,8 +31,8 @@
         "name": "Loanify",
         "desc": "A full stack loan web application for customers with flexible loan types and payment integration",
         "languages": "React.js, CSS3, Javascript",
-        "githubLink": "www.google.com",
-        "liveDemo": "www.tiktok.com",
+        "githubLink": "https://github.com/OghenefegaOmajene/Loanify",
+        "liveDemo": "https://loanify-solutions.vercel.app/",
         "role": "FullStack Developer"
     },
     {
@@ -40,8 +40,8 @@
         "name": "StudyHub",
         "desc": "Prototypes for About page and Blog page designs for a modern fullstack E-Learning Website project.",
         "languages": "React.js, CSS3, Javascript",
-        "githubLink": "www.google.com",
-        "liveDemo": "www.tiktok.com",
+        "githubLink": "https://github.com/OghenefegaOmajene/StudyHub",
+        "liveDemo": "",
         "role": "Frontend Developer"
     }
 ]
