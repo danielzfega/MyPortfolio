@@ -164,14 +164,16 @@ nav{
 @media screen and (max-width: 1100px){
     header{
         display: flex;
-        justify-content: space-between;
+        justify-content: end;
         padding: 0;
         margin-left: 10px;
     }
+    .leftNav p{
+      display: none;
+    }
     .leftNav{
-      /* background-color: coral; */
-      justify-content: start;
-      width: 600px;
+      /* border: 1px solid white; */
+      width: min-content;
     }
     .toggle{
         display: flex;
@@ -191,23 +193,23 @@ nav{
         flex-direction: column;
         /* border: 2px solid wheat; */
         position: absolute;
-        top: 0px;
+        top: 80px;
         align-items: start;
         justify-content: start;
-        left: 0px;
+        right: 0px;
         width: 160px;
-        height: 100vh;
+        height: 300px;
         /* height: 250px; */
-        border-radius: 0;
+        border-radius: 10px;
         background-color: #010824;
         animation: slideInFromLeft 0.5s ease-out forwards;
         /* background-color: rgba(0, 0, 0, 0.372); */
         z-index: 1000;
-        padding: 20px 0;
+        padding: 20px 10px;
     }
     @keyframes slideInFromLeft {
       from {
-        transform: translateX(-100%);
+        transform: translateX(100%);
         opacity: 0;
       }
       to {
@@ -235,18 +237,12 @@ nav{
     /* .toggle{
       display: block;
     } */
+    
 }
 
-@media screen and (max-width: 713px){
+@media screen and (max-width: 556px){
   .rightNav{
     /* border: 1px solid white; */
-    width: max-content;
-  }
-  .leftNav{
-    width: 400px;
-    /* border: 1px solid white; */
-  }
-  header{
-    margin-right: 10px;
+    width: 160px;
   }
 }
