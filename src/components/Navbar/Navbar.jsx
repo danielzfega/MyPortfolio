@@ -15,9 +15,9 @@ const Navbar = ({scrollToSection, refs}) => {
 
     const [listNav] = useState([
         { name: 'Home', ref: refs.homeRef },
-        { name: 'Skills', ref: refs.skillsRef },
+        { name: 'About', ref: refs.skillsRef },
         { name: 'Projects', ref: refs.projectsRef },
-        { name: 'Contact', ref: refs.contactRef },
+        { name: 'Experience', ref: refs.contactRef },
     ]);
     
   
