@@ -2,7 +2,6 @@ import React, {useState, useRef, useEffect} from 'react'
 import './Home.css'
 
 
-
 const Home = () => {
   const [typedText, setTypedText] = useState('');
   const [isVisible, setIsVisible] = useState(false);

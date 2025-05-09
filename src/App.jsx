@@ -5,13 +5,13 @@ import Navbar from './components/Navbar/Navbar'
 import Home from './components/Home/Home'
 import About from './components/About/About'
 import Projects from './components/Projects/Projects'
-import Contact from './components/Contact/Contact'
+import Experience from './components/Experience/Experience'
 
 function App() {
   const homeRef = useRef();
-  const skillsRef = useRef();
+  const aboutRef = useRef();
   const projectsRef = useRef();
-  const contactRef = useRef();
+  const expRef = useRef();
   
   const scrollToSection = (ref) => {
     if (ref?.current) {
@@ -21,12 +21,12 @@ function App() {
   return (
     <>
       <main>
-        <Navbar scrollToSection={scrollToSection} refs={{ homeRef, skillsRef, projectsRef, contactRef }} />
+        <Navbar scrollToSection={scrollToSection} refs={{ homeRef, aboutRef, projectsRef, expRef }} />
         <main>
           <section ref={homeRef}><Home /></section>
-          <section ref={skillsRef}><About /></section>
+          <section ref={aboutRef}><About /></section>
           <section ref={projectsRef}><Projects /></section>
-          <section ref={contactRef} className='contact'><Contact /></section>
+          <section ref={expRef} className='contact'><Experience /></section>
         </main>
       </main>
     </>
