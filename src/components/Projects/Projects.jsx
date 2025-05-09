@@ -8,13 +8,7 @@ import fluffscoop from '../../images/fluffscoop.png'
 import fundR from '../../images/fundR.png'
 import zaiganAI from '../../images/ZaiganAI.png'
 import './Projects.css'
-import {Swiper, SwiperSlide} from 'swiper/react'
-import { Navigation, Pagination, EffectCoverflow, Autoplay } from 'swiper/modules';
 
-import 'swiper/css';
-import 'swiper/css/effect-coverflow';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
 
 const Projects = () => { 
   const projectsRef = useRef();

@@ -1,0 +1,47 @@
+[
+    {
+        "id": 1,
+        "name": "Youtube Redesign Concept",
+        "desc": "A community proposal for Youtube's redesign, featuring cleaner UI, designed by Juxtopposed on YT",
+        "languages": "React.js, CSS3",
+        "githubLink": "www.google.com",
+        "liveDemo": "www.tiktok.com",
+        "role": "FullStack Developer"
+    },
+    {
+        "id": 2,
+        "name": "FluffScoop",
+        "desc": "A full stack website for ordering desserts and ice-cream",
+        "languages": "Next.jS, Typescript, Material UI",
+        "githubLink": "www.google.com",
+        "liveDemo": "www.tiktok.com",
+        "role": "FullStack Developer"
+    },
+    {
+        "id": 3,
+        "name": "Finomaly",
+        "desc": "A fully autonomous financial transactions anomaly detection AI model",
+        "languages": "Angular, CSS3, Typescript, Python",
+        "githubLink": "www.google.com",
+        "liveDemo": "www.tiktok.com",
+        "role": "FullStack Developer, AI/ML Engineer"
+    },
+    {
+        "id": 4,
+        "name": "Loanify",
+        "desc": "A full stack loan web application for customers with flexible loan types and payment integration",
+        "languages": "React.js, CSS3, Javascript",
+        "githubLink": "www.google.com",
+        "liveDemo": "www.tiktok.com",
+        "role": "FullStack Developer"
+    },
+    {
+        "id": 5,
+        "name": "StudyHub",
+        "desc": "Prototypes for About page and Blog page designs for a modern fullstack E-Learning Website project.",
+        "languages": "React.js, CSS3, Javascript",
+        "githubLink": "www.google.com",
+        "liveDemo": "www.tiktok.com",
+        "role": "Frontend Developer"
+    }
+]

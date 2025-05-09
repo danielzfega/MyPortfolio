@@ -13,7 +13,7 @@ header{
     /* transform: translate(-50%); */
     display: flex;
     justify-content: space-between;
-    background-color: #0a192f;
+    background-color: #0a192f42;
     /* padding-left: 60px; */
     align-items: center;
     /* gap: 50px; */
@@ -22,6 +22,7 @@ header{
     z-index: 1000;
     backdrop-filter: blur(10px);
     color: #ccd6f6;
+    /* margin-bottom: 10px; */
 } 
 .leftNav{
   /* border: 1px solid wheat; */
@@ -36,7 +37,7 @@ header{
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 150px;
+  width: 250px;
   height: 100%;
 }
 .leftNav, nav, .rightNav{
@@ -78,7 +79,7 @@ nav{
   transition: 1s;
 }
 .menu-toggle {
-    display: block;
+    display: none;
     font-size: 30px;
     cursor: pointer;
     color: black;

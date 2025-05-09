@@ -1,18 +1,6 @@
 import React, {useState, useRef, useEffect} from 'react'
-import hello from '../../images/hello.jpg'
-import myPic from '../../images/myPic.png'
 import './Home.css'
-import { FaCalendarAlt, FaLaptopCode } from "react-icons/fa";
-import { GiNigeria } from "react-icons/gi";
-import { FaMale } from "react-icons/fa";
-// import {Swiper, SwiperSlide} from 'swiper/react'
-// import {Navigation, Pagination, Autoplay, EffectCube} from 'swiper/modules';
 
-
-// import 'swiper/css';
-// import 'swiper/css/pagination';
-// import 'swiper/css/navigation';
-// import 'swiper/css/effect-cube'
 
 
 const Home = () => {

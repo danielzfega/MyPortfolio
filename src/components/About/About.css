@@ -3,7 +3,7 @@
     text-align: center;
     /* padding-left: 50px; */
     /* padding-right: 50px; */
-    border: 1px solid wheat;
+    /* border: 1px solid wheat; */
     height: 700px;
     display: flex;
     align-items: center;
@@ -65,5 +65,5 @@
 }
 
 .techStack::-webkit-scrollbar-track {
-  background-color: #1a1a1a; /* Background color of the scrollbar track */
+  background-color: #696969; /* Background color of the scrollbar track */
 }

@@ -68,7 +68,7 @@ const About = () => {
   return (
     <div className={`about animation ${isVisible ? "animation-active" : ""}`} ref={skillsRef}>
         <div className="aboutTxt">
-          <p className="aboutTxtHead">/about me</p>
+          <p className="aboutTxtHead"><b>/about me</b></p>
           <p>I am currently a <b>Software Engineering student</b> at <span style={{color: "#64ffda"}}>Aptech Education</span>, exploring the possibilities of backend technologies using <span style={{color: "#64ffda"}}>Java</span>, SpringBoot & Prisma. I am a Fullstack Web Developer & Roblox Games Developer.</p>
           <p>Here are some technologies I have been working with:</p>
 
