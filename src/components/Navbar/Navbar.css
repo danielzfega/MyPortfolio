@@ -168,7 +168,7 @@ nav{
         display: flex;
         justify-content: end;
         padding: 0;
-        margin-left: 10px;
+        /* margin-left: 10px; */
     }
     .leftNav p{
       display: none;
