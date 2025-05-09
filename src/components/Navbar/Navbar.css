@@ -6,6 +6,7 @@
 header{
     position: sticky;
     width: min(1300px, 100%);
+    /* width: 100%; */
     height: 80px;
     top: 0;
     /* background-color: rgb(153, 127, 51); */
@@ -14,6 +15,7 @@ header{
     display: flex;
     justify-content: space-between;
     background-color: #0a192f42;
+    /* background-color: rgb(255, 255, 255); */
     /* padding-left: 60px; */
     align-items: center;
     /* gap: 50px; */

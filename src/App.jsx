@@ -20,7 +20,7 @@ function App() {
   };
   return (
     <>
-      <main>
+      <main className='mainContainer'>
         <Navbar scrollToSection={scrollToSection} refs={{ homeRef, aboutRef, projectsRef, expRef }} />
         <main>
           <section ref={homeRef}><Home /></section>
