@@ -8,7 +8,7 @@ header{
     width: min(1300px, 100%);
     height: 80px;
     top: 0;
-    /* background-color: rebeccapurple; */
+    /* background-color: rgb(153, 127, 51); */
     /* border: 2px solid rgb(193, 29, 29); */
     /* transform: translate(-50%); */
     display: flex;
@@ -39,6 +39,11 @@ header{
   justify-content: center;
   width: 250px;
   height: 100%;
+}
+.rightNav i a, .rightNav i{
+  /* border: 1px solid white; */
+  display: flex;
+  align-items: center;
 }
 .rightNav i a{
   color: #ccd6f6;
@@ -103,15 +108,15 @@ nav{
     align-items: center;
     justify-content: space-evenly;
     gap: 5%;
-    /* border: 2px solid black; */
+    /* border: 2px solid rgb(174, 160, 160); */
     transition-duration: .5s;
   }
   
   .bars {
     width: 100%;
-    height: 5px;
-    background-color: rgb(176, 92, 255);
-    border-radius: 4px;
+    height: 2px;
+    background-color: #64ffda;
+    border-radius: 10px;
   }
   
   #bar2 {
@@ -159,8 +164,14 @@ nav{
 @media screen and (max-width: 1100px){
     header{
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         padding: 0;
+        margin-left: 10px;
+    }
+    .leftNav{
+      /* background-color: coral; */
+      justify-content: start;
+      width: 600px;
     }
     .toggle{
         display: flex;
@@ -224,4 +235,18 @@ nav{
     /* .toggle{
       display: block;
     } */
+}
+
+@media screen and (max-width: 713px){
+  .rightNav{
+    /* border: 1px solid white; */
+    width: max-content;
+  }
+  .leftNav{
+    width: 400px;
+    /* border: 1px solid white; */
+  }
+  header{
+    margin-right: 10px;
+  }
 }
