@@ -9,7 +9,7 @@
     width: 100%;
     height: 80vh;
     display: flex;
-    padding-top: 80px;
+    padding-top: 90px;
     /* grid-template-columns: repeat(2, 1fr); */
     gap: 100px;
     /* border: 1px solid black; */
@@ -195,8 +195,8 @@
         font-size: 20px !important;
     }
 }
-@media screen and (max-width: 650px) {
+/* @media screen and (max-width: 650px) {
     .helloBanner{
-        height: 100vh;
+        
     }
-}
+} */
