@@ -1,4 +1,4 @@
-import React, {useState, useRef, useEffect} from 'react'
+import React, {useState, useRef, useEffect} from 'react';
 import { FaGlobeAmericas } from "react-icons/fa";
 import { IoFolderOpen, IoLogoGithub } from "react-icons/io5";
 import './Projects.css'
@@ -99,8 +99,8 @@ const Projects = () => {
                     <i style={{color: "#64ffda", fontSize: "30px"}}><IoFolderOpen/></i>
 
                     <div className="linkIcons">
-                      <i><IoLogoGithub/></i>
-                      <i><FaGlobeAmericas/></i>
+                      <i><a href={project.githubLink}><IoLogoGithub/></a></i>
+                      <i><a href={project.liveDemo}><FaGlobeAmericas/></a></i>
                     </div>
                   </div>
 
@@ -109,7 +109,7 @@ const Projects = () => {
                     <p style={{color: "#8892b0"}}>{project.desc}</p>
 
                     <p style={{color: "#8892b0"}}>{project.languages}</p>
-                    <p style={{color: "#8892b0"}}><i>{project.role}</i></p>
+                    <p style={{color: "#8892b0"}}><i><b>{project.role}</b></i></p>
                   </div>
                 </div>
               ))
