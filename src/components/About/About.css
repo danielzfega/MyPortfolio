@@ -4,6 +4,7 @@
     /* padding-left: 50px; */
     /* padding-right: 50px; */
     /* border: 1px solid wheat; */
+    padding-top: 80px;
     height: 700px;
     display: flex;
     align-items: center;
@@ -13,6 +14,9 @@
 }
 .about p{
   margin: 0;
+}
+.randomAboutP{
+  line-height: 40px;
 }
 .aboutTxt{
   width: 50%;

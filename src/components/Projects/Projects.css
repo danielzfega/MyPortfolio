@@ -2,6 +2,7 @@
     color: #ccd6f6;
     width: 100%;
     height: 750px;
+    padding-top: 80px;
     /* border: 1px solid white; */
     display: flex;
     flex-direction: column;

@@ -26,7 +26,7 @@ const Experience = () => {
 
 
   return (
-    <section className={`contacts animation ${isVisible ? 'animation-active' : ''}`} ref={expRef}>
+    <section className={`exp animation ${isVisible ? 'animation-active' : ''}`} ref={expRef}>
       
     </section>
   )

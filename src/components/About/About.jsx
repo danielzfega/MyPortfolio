@@ -2,6 +2,8 @@
 import React, { useState, useRef, useEffect } from "react";
 import "./About.css";
 import Fega from "../../images/Fega.png";
+import me from "../../images/me.jpg";
+import me2 from "../../images/me2.jpg";
 import { TbCaretRight } from "react-icons/tb";
 
 const About = () => {
@@ -52,7 +54,7 @@ const About = () => {
     <div className={`about animation ${isVisible ? "animation-active" : ""}`} ref={aboutRef}>
         <div className="aboutTxt">
           <p className="aboutTxtHead"><b>/about me</b></p>
-          <p>I am currently a <b>Software Engineering student</b> at <span style={{color: "#64ffda"}}>Aptech Education</span>, exploring the possibilities of backend technologies using <span style={{color: "#64ffda"}}>Java</span>, SpringBoot & Prisma. I am a Fullstack Web Developer & Roblox Games Developer.</p>
+          <p className="randomAboutP">I am currently a <b>Software Engineering student</b> at <span style={{color: "#64ffda"}}>Aptech Education</span>, exploring the possibilities of backend technologies using <span style={{color: "#64ffda"}}>Java</span>, SpringBoot & Prisma. I am a Fullstack Web Developer & Roblox Games Developer.</p>
           <p>Here are some technologies I have been working with:</p>
 
           <div className="techStack">
@@ -76,7 +78,7 @@ const About = () => {
 
 
       <div className="aboutImg">
-        <img src={Fega} alt="" />
+        <img src={me2} alt="" />
       </div>
     </div>
   );
