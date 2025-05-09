@@ -15,9 +15,9 @@ const Navbar = ({scrollToSection, refs}) => {
 
     const [listNav] = useState([
         { name: 'Home', ref: refs.homeRef },
-        { name: 'About', ref: refs.skillsRef },
+        { name: 'About', ref: refs.aboutRef },
         { name: 'Projects', ref: refs.projectsRef },
-        { name: 'Experience', ref: refs.contactRef },
+        { name: 'Experience', ref: refs.expRef },
     ]);
     
   
@@ -45,8 +45,12 @@ const Navbar = ({scrollToSection, refs}) => {
 
         <div className="rightNav">
             <i><MdAttachEmail/></i>
-            <i><FaGithub/></i>
-            <i><FaLinkedin/></i>
+            <i>
+                <a href="https://github.com/OghenefegaOmajene"><FaGithub/></a>
+            </i>
+            <i>
+                <a href="https://www.linkedin.com/in/daniels-fega-0291b12a9/"><FaLinkedin/></a>
+            </i>
         </div>
 
         <div className="menu-toggle">

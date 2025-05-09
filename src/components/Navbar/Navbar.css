@@ -40,6 +40,9 @@ header{
   width: 250px;
   height: 100%;
 }
+.rightNav i a{
+  color: #ccd6f6;
+}
 .leftNav, nav, .rightNav{
     display: flex;
     gap: 30px;
@@ -74,7 +77,7 @@ nav{
     border-bottom: 2px solid #64ffda;
     /* transition: 0.6s; */
 }
-.rightNav i:hover{
+.rightNav i:hover, .rightNav i a:hover{
   color: #64ffda;
   transition: 1s;
 }

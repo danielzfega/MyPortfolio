@@ -26,7 +26,7 @@ function App() {
           <section ref={homeRef}><Home /></section>
           <section ref={aboutRef}><About /></section>
           <section ref={projectsRef}><Projects /></section>
-          <section ref={expRef} className='contact'><Experience /></section>
+          <section ref={expRef}><Experience /></section>
         </main>
       </main>
     </>
