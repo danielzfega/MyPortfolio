@@ -27,7 +27,10 @@ const Experience = () => {
 
   return (
     <section className={`exp animation ${isVisible ? 'animation-active' : ''}`} ref={expRef}>
-      
+      {/* <p>/experiences</p>
+      <div className="expDiv">
+
+      </div> */}
     </section>
   )
 }
