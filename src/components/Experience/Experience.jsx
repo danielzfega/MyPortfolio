@@ -27,10 +27,20 @@ const Experience = () => {
 
   return (
     <section className={`exp animation ${isVisible ? 'animation-active' : ''}`} ref={expRef}>
-      {/* <p>/experiences</p>
-      <div className="expDiv">
+      <p className='expHeadTxt'>/experience</p>
+      <div className="expBox">
+        <div className="organisation">SnapiLabs</div>
 
-      </div> */}
+        <div className="expDesc">
+          <p>Intern @ SnapiLabs</p>
+          <p>AUG 2024 - NOV 2024</p>
+          <p>Ventured into an impactful internship at SnapiLabs, transforming theoretical knowledge into practical skills, gaining hands-on experience and increasing expertise in frontend web development</p>
+        </div>
+      </div>
+
+      <div className="footer">
+        <p>Built and designed by Daniels Fega, &copy; 2025</p>
+      </div>
     </section>
   )
 }
