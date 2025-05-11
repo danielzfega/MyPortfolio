@@ -3,7 +3,7 @@
     padding-top: 80px;
     width: 100%;
     height: 500px;
-    background-color: rgba(0, 255, 255, 0.205);
+    /* background-color: rgba(0, 255, 255, 0.205); */
     color: #ccd6f6;
     display: flex;
     flex-direction: column;
@@ -19,16 +19,45 @@
 }
 .expBox{
     display: flex;
+    /* gap: 20px; */
+    justify-content: space-around;
     width: 90%;
     height: 90%;
-    background-color: rgba(255, 166, 0, 0.285);
+    /* background-color: rgba(255, 166, 0, 0.285); */
 }
 .organisation{
-    border: 1px solid white;
-    width: 40%;
+    /* border: 1px solid white; */
+    width: 20%;
     height: 100%;
 }
+.organisation p{
+    font-size: 25px;
+    cursor: pointer;
+}
+/* .organisation p:hover{
+    border-right: 3px solid #64ffda;
+    color: #64ffda;
+} */
+.organisation.active p {
+    border-right: 3px solid #64ffda;
+    color: #64ffda;
+    animation: flashBackground 0.6s ease-in-out;
+  }
+  
+  @keyframes flashBackground {
+    0% {
+      background-color: rgba(100, 255, 218, 0.2);
+    }
+    100% {
+      background-color: transparent;
+    }
+  }
 .expDesc{
-    width: 60%;
+    width: 70%;
+    /* background-color: black; */
     height: 100%;
+    font-size: 20px;
+}
+.expDesc p{
+    line-height: 30px;
 }

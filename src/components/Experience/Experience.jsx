@@ -1,10 +1,24 @@
 import React, {useState, useRef, useEffect} from 'react'
+import { IoCalendar } from "react-icons/io5";
+import { TbCaretRight } from "react-icons/tb";
 import './Experience.css'
 
 const Experience = () => {
   const expRef = useRef();
   const [isVisible, setIsVisible] = useState(false)
+  const [expSelect, setExpSelect] = useState(false)
 
+  useEffect(() => {
+    const handleClickOutside = (e) => {
+      if (!expRef.current.contains(e.target)) {
+        setExpSelect(null);
+      }
+    };
+  
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, []);
+  
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
@@ -29,12 +43,17 @@ const Experience = () => {
     <section className={`exp animation ${isVisible ? 'animation-active' : ''}`} ref={expRef}>
       <p className='expHeadTxt'>/experience</p>
       <div className="expBox">
-        <div className="organisation">SnapiLabs</div>
+      <div 
+        className={`organisation ${expSelect === 'snapi' ? 'active' : ''}`}
+        onClick={() => setExpSelect('snapi')}
+      >
+        <p>SnapiLabs</p>
+      </div>
 
         <div className="expDesc">
-          <p>Intern @ SnapiLabs</p>
+          <p><b>Intern @ <span style={{color: "#64ffda"}}>SnapiLabs</span></b></p>
           <p>AUG 2024 - NOV 2024</p>
-          <p>Ventured into an impactful internship at SnapiLabs, transforming theoretical knowledge into practical skills, gaining hands-on experience and increasing expertise in frontend web development</p>
+          <p><i style={{color: "#64ffda"}}><TbCaretRight /></i>Ventured into an impactful internship at SnapiLabs, transforming theoretical knowledge into practical skills, gaining hands-on experience and increasing expertise in frontend web development</p>
         </div>
       </div>
 
