@@ -61,3 +61,20 @@
 .expDesc p{
     line-height: 30px;
 }
+
+
+@media screen and (max-width: 650px) {
+
+    .expBox{
+        display: flex;
+        flex-direction: column;
+    }
+    .organisation{
+        /* border: 1px solid white; */
+        width: 50%;
+    }
+    .expDesc{
+        width: 100%;
+        /* background-color: #18181a; */
+    }
+}
