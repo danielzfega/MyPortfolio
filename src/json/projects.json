@@ -43,5 +43,14 @@
         "githubLink": "https://github.com/OghenefegaOmajene/StudyHub",
         "liveDemo": "",
         "role": "Frontend Developer"
+    },
+    {
+        "id": 6,
+        "name": "HireCraft",
+        "desc": "An application for connecting service providers with clients built on SpringBoot",
+        "languages": "React.js, CSS3, Java, SpringBoot",
+        "githubLink": "https://github.com/OghenefegaOmajene/HireCraft",
+        "liveDemo": "http://hirecraft.vercel.app",
+        "role": "FullStack Developer"
     }
 ]
