@@ -12,7 +12,7 @@
         "id": 2,
         "name": "FluffScoop",
         "desc": "A full stack website for ordering desserts and ice-cream",
-        "languages": "Next.jS, Typescript, Material UI",
+        "languages": "Next.js, Typescript, Material UI",
         "githubLink": "https://github.com/OghenefegaOmajene/FluffScoop",
         "liveDemo": "https://fluffscoop.vercel.app/",
         "role": "FullStack Developer"

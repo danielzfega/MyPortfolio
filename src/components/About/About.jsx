@@ -2,7 +2,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import "./About.css";
 import Fega from "../../images/Fega.png";
-import me from "../../images/me.jpg";
+import me from "../../images/me3.jpg";
 import me2 from "../../images/me2.jpg";
 import { TbCaretRight } from "react-icons/tb";
 
@@ -36,6 +36,8 @@ const About = () => {
     {name: "Javascript ES6+"},
     { name: "Typescript" },
     { name: "Node.js" },
+    { name: "Nest.js" },
+    { name: "Tailwind CSS" },
     { name: "Lua" },
     { name: "Sql" },
     { name: "React.js" },
