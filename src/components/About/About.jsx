@@ -3,7 +3,7 @@ import React, { useState, useRef, useEffect } from "react";
 import "./About.css";
 import Fega from "../../images/Fega.png";
 import me from "../../images/me3.jpg";
-import me2 from "../../images/me2.jpg";
+import me2 from "../../images/me.jpg";
 import { TbCaretRight } from "react-icons/tb";
 
 const About = () => {
