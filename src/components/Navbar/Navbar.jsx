@@ -1,18 +1,22 @@
 import React, { useState } from "react";
-import { FaHome, FaUser, FaEnvelope, FaGithub, FaMoon, FaSun } from "react-icons/fa";
+import { FaHouse, FaUser, FaRegFolderOpen, FaBriefcase, FaEnvelope, FaGithub, FaLinkedin } from "react-icons/fa6";
+import { IoSunnyOutline, IoMoon } from "react-icons/io5";
 import "./Navbar2.css"; // custom CSS file for styling
 
 export default function Navbar() {
   const [darkMode, setDarkMode] = useState(false);
 
   const navItems = [
-    { href: "/", label: "Home", icon: <FaHome /> },
+    { href: "/", label: "Home", icon: <FaHouse /> },
     { href: "/about", label: "About", icon: <FaUser /> },
+    { href: "/projects", label: "Projects", icon: <FaRegFolderOpen /> },
+    { href: "/experience", label: "Experience", icon: <FaBriefcase /> },
     { href: "/contact", label: "Contact", icon: <FaEnvelope /> },
   ];
 
   const socials = [
-    { name: "GitHub", url: "https://github.com/", icon: <FaGithub /> },
+    { name: "GitHub", url: "https://github.com/404khai", icon: <FaGithub /> },
+    { name: "LinkedIn", url: "https://www.linkedin.com/in/daniels-fega-0291b12a9", icon: <FaLinkedin /> },
   ];
 
   return (
@@ -39,7 +43,7 @@ export default function Navbar() {
           className="nav-icon"
           title="Toggle Theme"
         >
-          {darkMode ? <FaSun /> : <FaMoon />}
+          {darkMode ? <IoMoon /> : <IoSunnyOutline />}
         </button>
       </nav>
     </div>
