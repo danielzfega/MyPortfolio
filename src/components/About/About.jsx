@@ -1,9 +1,7 @@
 
 import React, { useState, useRef, useEffect } from "react";
 import "./About.css";
-import Fega from "../../images/Fega.png";
-import me from "../../images/me3.jpg";
-import me2 from "../../images/me.jpg";
+import me from "../../images/fega.png";
 import { TbCaretRight } from "react-icons/tb";
 
 const About = () => {
@@ -80,7 +78,7 @@ const About = () => {
 
 
       <div className="aboutImg">
-        <img src={me2} alt="" />
+        <img src={me} alt="" />
       </div>
     </div>
   );
