@@ -1,6 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=NTR&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
 /* @font-face {
   font-family: 'SquareGame';
   src: url('./fonts/Square Game.woff2') format('woff2'), 
@@ -8,12 +8,13 @@
 } */
 
 *{
-  font-family: "NTR", sans-serif;
+  /* font-family: "NTR", sans-serif; */
+  font-family: "Bangers", system-ui;
 }
 body{
   margin: 0;
   font-family: Poppins, sans-serif;
-  background-color: #EBD494;
+  background-color: #ebd49488;
   /* background-color: black; */
   color: black;
   width: 100%;
