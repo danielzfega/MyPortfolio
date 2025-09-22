@@ -94,7 +94,7 @@
 // export default Home;
 
 import React, {useState, useRef, useEffect} from 'react'
-import './Home2.css'
+import './Home.css'
 import me from "../../images/fega.png";
 
 const Home = () => {

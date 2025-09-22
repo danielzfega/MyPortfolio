@@ -3,16 +3,17 @@ import { FaHouse, FaUser, FaRegFolderOpen, FaBriefcase, FaEnvelope, FaGithub, Fa
 import { IoSunnyOutline, IoMoon } from "react-icons/io5";
 import "./Navbar2.css"; // custom CSS file for styling
 
-export default function Navbar() {
+export default function Navbar({scrollToSection, refs}) {
   const [darkMode, setDarkMode] = useState(false);
 
   const navItems = [
-    { href: "/", label: "Home", icon: <FaHouse /> },
-    { href: "/about", label: "About", icon: <FaUser /> },
-    { href: "/projects", label: "Projects", icon: <FaRegFolderOpen /> },
-    { href: "/experience", label: "Experience", icon: <FaBriefcase /> },
-    { href: "/contact", label: "Contact", icon: <FaEnvelope /> },
+    { label: "Home", icon: <FaHouse />, ref: refs.homeRef },
+    { label: "About", icon: <FaUser />, ref: refs.aboutRef },
+    { label: "Projects", icon: <FaRegFolderOpen />, ref: refs.projectsRef },
+    { label: "Experience", icon: <FaBriefcase />, ref: refs.expRef },
+    { label: "Contact", icon: <FaEnvelope />, ref: refs.contactRef },
   ];
+
 
   const socials = [
     { name: "GitHub", url: "https://github.com/404khai", icon: <FaGithub /> },
@@ -23,7 +24,7 @@ export default function Navbar() {
     <div className={`navbar-container ${darkMode ? "dark" : ""}`}>
       <nav className="navbar">
         {navItems.map((item) => (
-          <a key={item.href} href={item.href} className="nav-icon" title={item.label}>
+          <a key={item.label} onClick={() => scrollToSection(item.ref)} className="nav-icon" title={item.label}>
             {item.icon}
           </a>
         ))}
@@ -49,75 +50,4 @@ export default function Navbar() {
     </div>
   );
 }
-
-
-// import React, { useState } from 'react'
-// import './Navbar.css'
-// import { MdAttachEmail } from "react-icons/md";
-// import { FaLinkedin, FaGithub } from "react-icons/fa";
-// // import Contact from '../Contact/Contact';
-
-// const Navbar = ({scrollToSection, refs}) => {
-//     // alert(activeTab)
-//     // console.log("Active Tab:", activeTab);
-//     const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-//     const toggleMenu = () => {
-//         setIsMenuOpen(!isMenuOpen);
-//     };
-
-//     const [listNav] = useState([
-//         { name: 'Home', ref: refs.homeRef },
-//         { name: 'About', ref: refs.aboutRef },
-//         { name: 'Projects', ref: refs.projectsRef },
-//         { name: 'Experience', ref: refs.expRef },
-//     ]);
-    
-  
-//   return (
-//     <header>
-//         <div className="leftNav">
-//             <p>Daniels Fega</p>
-//             <nav className={`nav ${isMenuOpen ? 'open' : ''}`}>
-//                 {
-//                     listNav.map((value, key) => (
-//                         <span 
-//                             id='navLinks'
-//                             className='navLinks'
-//                             key={key} 
-//                             // className='active'
-//                             onClick={() => scrollToSection(value.ref)}
-
-//                         >
-//                             {value.name}
-//                         </span>
-//                     ))
-//                 }
-//             </nav>
-//         </div>
-
-//         <div className="rightNav">
-//             <i><MdAttachEmail/></i>
-//             <i>
-//                 <a href="https://github.com/OghenefegaOmajene"><FaGithub/></a>
-//             </i>
-//             <i>
-//                 <a href="https://www.linkedin.com/in/daniels-fega-0291b12a9/"><FaLinkedin/></a>
-//             </i>
-//         </div>
-
-//         <div className="menu-toggle">
-//             <input type="checkbox" id="checkbox" checked={isMenuOpen} onChange={toggleMenu} />
-//             <label htmlFor="checkbox" className="toggle">
-//             <div className="bars" id="bar1"></div>
-//             <div className="bars" id="bar2"></div>
-//             <div className="bars" id="bar3"></div>
-//             </label>
-//         </div>
-//     </header>
-//   )
-// }
-
-
-// export default Navbar;
 
