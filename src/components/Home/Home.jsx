@@ -95,7 +95,7 @@
 
 import React, {useState, useRef, useEffect} from 'react'
 import './Home.css'
-import me from "../../images/fega.png";
+import me from "/fega.png";
 
 const Home = () => {
   const [typedText, setTypedText] = useState('');
