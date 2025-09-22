@@ -41,7 +41,7 @@ const Experience = () => {
 
   return (
     <section className={`exp animation ${isVisible ? 'animation-active' : ''}`} ref={expRef}>
-      <p className='expHeadTxt'>/experience</p>
+      <p className='expHeadTxt'><b>/experience</b></p>
       <div className="expBox">
         <div 
           className={`organisation ${expSelect === 'snapi' ? 'active' : ''}`}

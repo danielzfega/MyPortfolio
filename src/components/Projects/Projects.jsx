@@ -90,7 +90,7 @@ const Projects = () => {
     <div>
       {/* <section className={`projects animation ${isVisible ? 'animation-active' : ''}`} ref={projectsRef}> */}
       <section className='projects' ref={projectsRef}>
-          <p className='projectTitle'>/projects</p>
+          <p className='projectTitle'><b>/projects</b></p>
 
           <div className="projectBox">
             {

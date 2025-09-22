@@ -30,9 +30,9 @@
   text-align: start;
   font-size: 22px;;
 }
-/* .aboutTxt p{
-  border: 1px solid white;
-} */
+.aboutTxt h4{
+  margin: 0;
+}
 .aboutTxtHead{
   font-size: 50px;
   font-family: "Bangers", system-ui !important;

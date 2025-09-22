@@ -54,8 +54,10 @@ const About = () => {
     <div className={`about animation ${isVisible ? "animation-active" : ""}`} ref={aboutRef}>
         <div className="aboutTxt">
           <p className="aboutTxtHead"><b>/about me</b></p>
-          <p className="randomAboutP"><b>Software Engineering student</b> at <span style={{color: "rgb(103, 176, 72)"}}>Aptech Education</span>, exploring <span style={{color: "rgb(103, 176, 72)"}}>Python</span> and Java. I am a Fullstack Web Developer & Roblox Games Developer.</p>
-          <p>Here are some technologies I have been working with:</p>
+          <h4 className="randomAboutP"><b>Software Engineering student</b> at <span style={{color: "rgb(103, 176, 72)"}}>Aptech Education</span>, exploring <span style={{color: "rgb(103, 176, 72)"}}>Python</span></h4>
+          <h4>Intrigued by B2B Saas, AI startups and LLMs.</h4>
+          <h4>Fullstack Web Developer & Roblox Games Developer.</h4>
+          <p>Here are some technologies I work with:</p>
 
           <div className="techStack">
             {
