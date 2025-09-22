@@ -97,7 +97,7 @@ const Projects = () => {
               projects.map((project, key) => (
                 <div key={key} className='project'>
                   <div className="projectHead">
-                    <i style={{color: "#64ffda", fontSize: "30px"}}><IoFolderOpen/></i>
+                    <i style={{color: "rgb(103, 176, 72)", fontSize: "30px"}}><IoFolderOpen/></i>
 
                     <div className="linkIcons">
                       <i><a href={project.githubLink}><IoLogoGithub/></a></i>
@@ -107,10 +107,10 @@ const Projects = () => {
 
                   <div className="projectContent">
                     <p className='projectName'><b>{project.name}</b></p>
-                    <p style={{color: "#8892b0"}}>{project.desc}</p>
+                    <p>{project.desc}</p>
 
-                    <p style={{color: "#8892b0"}}>{project.languages}</p>
-                    <p style={{color: "#8892b0"}}><i><b>{project.role}</b></i></p>
+                    <p>{project.languages}</p>
+                    <p><i><b>{project.role}</b></i></p>
                   </div>
                 </div>
               ))

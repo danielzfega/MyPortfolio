@@ -67,7 +67,7 @@
 
 /* The handle (thumb) of the scrollbar */
 .techStack::-webkit-scrollbar-thumb {
-  background-color: #BFD7B5; /* Color of the scrollbar handle */
+  background-color: rgb(103, 176, 72); /* Color of the scrollbar handle */
   border-radius: 10px;
 }
 

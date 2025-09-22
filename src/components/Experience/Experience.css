@@ -38,8 +38,8 @@
     color: #64ffda;
 } */
 .organisation.active p {
-    border-right: 3px solid #64ffda;
-    color: #64ffda;
+    border-right: 3px solid rgb(103, 176, 72);
+    color: rgb(103, 176, 72);
     animation: flashBackground 0.6s ease-in-out;
   }
   

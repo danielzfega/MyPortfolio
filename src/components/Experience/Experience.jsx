@@ -51,13 +51,13 @@ const Experience = () => {
         </div>
 
         <div className="expDesc">
-          <p><b>Intern @ <span style={{color: "#64ffda"}}>SnapiLabs</span></b></p>
+          <p><b>Intern @ <span style={{color: "rgb(103, 176, 72)"}}>SnapiLabs</span></b></p>
           <p>AUG 2024 - NOV 2024</p>
-          <p><i style={{color: "#64ffda"}}><TbCaretRight /></i>Ventured into an impactful internship at SnapiLabs, transforming theoretical knowledge into practical skills, gaining hands-on experience and increasing expertise in frontend web development</p>
+          <p><i style={{color: "rgb(103, 176, 72)"}}><TbCaretRight /></i>Ventured into an impactful internship at SnapiLabs, transforming theoretical knowledge into practical skills, gaining hands-on experience and increasing expertise in frontend web development</p>
         </div>
       </div>
 
-      <div className="expBox">
+      {/* <div className="expBox">
         <div 
           className={`organisation ${expSelect === 'snapi' ? 'active' : ''}`}
           onClick={() => setExpSelect('snapi')}
@@ -70,7 +70,7 @@ const Experience = () => {
           <p>JUL 2025 - present</p>
           <p><i style={{color: "#64ffda"}}><TbCaretRight /></i>Maintaining and implementing AI features across the platform, pushing updates & marketing</p>
         </div>
-      </div>
+      </div> */}
 
       <div className="footer">
         <p>Built and designed by Daniels Fega, &copy; 2025</p>

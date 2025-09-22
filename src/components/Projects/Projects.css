@@ -39,12 +39,12 @@
     justify-content: center;
     align-items: center;
     height: 100%;
-    background-color: #112240;
+    background-color: rgba(103, 176, 72, 0.142);
     border-radius: 10px;
     padding-bottom: 10px;
 }
 .project:hover{
-    background-color: #233554;
+    background-color: rgba(103, 176, 72, 0.064);
     transition: 0.6s;
     transform: translateY(-7px);
     cursor: pointer;
@@ -86,7 +86,7 @@
 }
 .linkIcons i a{
     text-decoration: none;
-    color: #ccd6f6;
+    color: black;
     /* display: flex; */
     /* align-items: center; */
 }
