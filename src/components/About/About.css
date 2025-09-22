@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
 /* @import url('https://fonts.googleapis.com/css2?family=MuseoModerno:ital,wght@0,100..900;1,100..900&display=swap'); */
 .about{
     text-align: center;
@@ -27,18 +28,18 @@
   align-items: start;
   justify-content: center;
   text-align: start;
-  font-size: 22px;
-  color: #ccd6f6;
+  font-size: 22px;;
 }
 /* .aboutTxt p{
   border: 1px solid white;
 } */
 .aboutTxtHead{
   font-size: 50px;
+  font-family: "Bangers", system-ui !important;
 }
 .aboutImg{
-  width: 20%;
-  height: 50%;
+  width: 30%;
+  height: 60%;
 }
 .aboutImg img{
   border-radius: 10px;
@@ -66,7 +67,7 @@
 
 /* The handle (thumb) of the scrollbar */
 .techStack::-webkit-scrollbar-thumb {
-  background-color: #90b000; /* Color of the scrollbar handle */
+  background-color: #BFD7B5; /* Color of the scrollbar handle */
   border-radius: 10px;
 }
 

@@ -178,7 +178,7 @@ const Home = () => {
 
       {/* RIGHT SIDE: IMAGE */}
       <div className="myPic">
-        <img src={me} alt="Fega" />
+        <img src={me} alt="my photo" />
       </div>
     </div> 
 

@@ -1,7 +1,7 @@
 
 import React, { useState, useRef, useEffect } from "react";
 import "./About.css";
-import me from "../../images/fega.png";
+import me from "../../images/setup.jpeg";
 import { TbCaretRight } from "react-icons/tb";
 
 const About = () => {
@@ -54,13 +54,13 @@ const About = () => {
     <div className={`about animation ${isVisible ? "animation-active" : ""}`} ref={aboutRef}>
         <div className="aboutTxt">
           <p className="aboutTxtHead"><b>/about me</b></p>
-          <p className="randomAboutP">I am currently a <b>Software Engineering student</b> at <span style={{color: "#64ffda"}}>Aptech Education</span>, exploring the possibilities of backend technologies using <span style={{color: "#64ffda"}}>Java</span>, SpringBoot & Prisma. I am a Fullstack Web Developer & Roblox Games Developer.</p>
+          <p className="randomAboutP"><b>Software Engineering student</b> at <span style={{color: "rgb(103, 176, 72)"}}>Aptech Education</span>, exploring <span style={{color: "rgb(103, 176, 72)"}}>Python</span> and Java. I am a Fullstack Web Developer & Roblox Games Developer.</p>
           <p>Here are some technologies I have been working with:</p>
 
           <div className="techStack">
             {
               listTechStack.map((techStack, key) => (
-                <p key={key}><i style={{color: "#64ffda"}}><TbCaretRight /></i>{techStack.name}</p>
+                <p key={key}><i style={{color: "rgb(103, 176, 72)"}}><TbCaretRight /></i>{techStack.name}</p>
               ))  
             }
             
