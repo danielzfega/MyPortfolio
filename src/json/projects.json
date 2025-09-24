@@ -4,7 +4,7 @@
         "name": "Youtube Redesign Concept",
         "desc": "A community proposal for Youtube's redesign, featuring cleaner UI, designed by Juxtopposed on YT",
         "languages": "React.js, CSS3",
-        "githubLink": "https://github.com/OghenefegaOmajene/Youtube-Redesign-Concept",
+        "githubLink": "https://github.com/404khai/Youtube-Redesign-Concept",
         "liveDemo": "https://youtube-redesign-concept.vercel.app",
         "role": "FullStack Developer"
     },
@@ -13,7 +13,7 @@
         "name": "FluffScoop",
         "desc": "A website for ordering desserts and ice-cream powered by Zustand",
         "languages": "Next.js, Typescript, Material UI",
-        "githubLink": "https://github.com/OghenefegaOmajene/FluffScoop",
+        "githubLink": "https://github.com/404khai/FluffScoop",
         "liveDemo": "https://fluffscoop.vercel.app/",
         "role": "FullStack Developer"
     },
@@ -49,8 +49,17 @@
         "name": "HireCraft",
         "desc": "An application for connecting service providers with clients built on SpringBoot",
         "languages": "React.js, CSS3, Java, SpringBoot",
-        "githubLink": "https://github.com/OghenefegaOmajene/HireCraft",
+        "githubLink": "https://github.com/404khai/HireCraft",
         "liveDemo": "http://hirecraft.vercel.app",
         "role": "FullStack Developer"
+    },
+    {
+        "id": 7,
+        "name": "Supanote",
+        "desc": "Concept for an AI workspace for taking notes and tasks.",
+        "languages": "React.js, CSS3, Javascript",
+        "githubLink": "https://github.com/404khai/supanote",
+        "liveDemo": "https://supanote-space.vercel.app",
+        "role": "Frontend Developer"
     }
 ]
