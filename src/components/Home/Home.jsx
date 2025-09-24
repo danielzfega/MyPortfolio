@@ -167,13 +167,13 @@ const Home = () => {
           Software Engineer, Roblox Developer.
         </p>
 
-          
-          <button class="button">
-              <span class="button_lg">
-                  <span class="button_sl"></span>
-                  <span class="button_text">Download my CV</span>
-              </span>
-          </button>
+          <a href="/cv.pdf" download="Daniels-Fega-CV.pdf" className="button">
+            <span className="button_lg">
+              <span className="button_sl"></span>
+              <span className="button_text">Download my CV</span>
+            </span>
+          </a>
+
       </div>
 
       {/* RIGHT SIDE: IMAGE */}
