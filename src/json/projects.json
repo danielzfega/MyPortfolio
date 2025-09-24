@@ -19,11 +19,11 @@
     },
     {
         "id": 3,
-        "name": "Finomaly",
-        "desc": "A fully autonomous financial transactions anomaly detection AI model",
-        "languages": "Angular, CSS3, Typescript, Python",
+        "name": "MiniMart",
+        "desc": "A three page e-commerce mobile application that allows users to browse products, and add items to cart and favorites.",
+        "languages": "React Native, Zustand, Expo",
         "githubLink": "https://github.com/OghenefegaOmajene/Finomaly",
-        "liveDemo": "https://finomaly.vercel.app/",
+        "liveDemo": "",
         "role": "FullStack Developer, AI/ML Engineer"
     },
     {
@@ -37,11 +37,11 @@
     },
     {
         "id": 5,
-        "name": "StudyHub",
-        "desc": "Prototypes for About page and Blog page designs for a modern fullstack E-Learning Website project.",
+        "name": "Supanote",
+        "desc": "Concept for an AI workspace for taking notes and tasks.",
         "languages": "React.js, CSS3, Javascript",
-        "githubLink": "https://github.com/OghenefegaOmajene/StudyHub",
-        "liveDemo": "",
+        "githubLink": "https://github.com/404khai/supanote",
+        "liveDemo": "https://supanote-space.vercel.app",
         "role": "Frontend Developer"
     },
     {
@@ -52,14 +52,5 @@
         "githubLink": "https://github.com/404khai/HireCraft",
         "liveDemo": "http://hirecraft.vercel.app",
         "role": "FullStack Developer"
-    },
-    {
-        "id": 7,
-        "name": "Supanote",
-        "desc": "Concept for an AI workspace for taking notes and tasks.",
-        "languages": "React.js, CSS3, Javascript",
-        "githubLink": "https://github.com/404khai/supanote",
-        "liveDemo": "https://supanote-space.vercel.app",
-        "role": "Frontend Developer"
     }
 ]
