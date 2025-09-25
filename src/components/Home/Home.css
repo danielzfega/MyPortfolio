@@ -4,6 +4,7 @@
   align-items: center;
   gap: 50px;
   height: 500px;
+  /* border: 5px solid black; */
   color: black;
 }
 
@@ -185,4 +186,17 @@
 
 .button:hover .button_lg::after {
   background-color: #fff;
+}
+
+
+@media screen and (max-width: 562px){
+  .hiTxt{
+    font-size: 80px;
+  }
+}
+
+@media screen and (max-width: 490px){
+  .intro{
+    font-size: 20px;
+  }
 }

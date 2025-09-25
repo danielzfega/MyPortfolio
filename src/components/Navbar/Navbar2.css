@@ -53,3 +53,9 @@
 .dark .separator {
   background: rgba(255,255,255,0.3);
 }
+
+@media screen and (max-width: 474px){
+  .navbar{
+    width: 90%;
+  }
+}

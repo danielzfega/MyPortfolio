@@ -19,7 +19,7 @@
     },
     {
         "id": 3,
-        "name": "Supacricx CLI",
+        "name": "Supabricx CLI",
         "desc": "An npm CLI command for generating Express, Nest.js and Springboot boilerplate code with inbuilt auth.",
         "languages": "Typescript",
         "githubLink": "",
@@ -68,7 +68,7 @@
         "desc": "A full stack loan web application for customers with flexible loan types and payment integration",
         "languages": "React.js, CSS3, Javascript",
         "githubLink": "https://github.com/OghenefegaOmajene/Loanify",
-        "liveDemo": "https://loanify-solutions.vercel.app/",
+        "liveDemo": "https://loanify-solutions.vercel.app",
         "role": "FullStack Developer"
     }
 ]
