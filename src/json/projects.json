@@ -19,11 +19,11 @@
     },
     {
         "id": 3,
-        "name": "Youtube Redesign Concept",
-        "desc": "A community proposal for Youtube's redesign, featuring cleaner UI, designed by Juxtopposed on YT",
-        "languages": "React.js, CSS3",
-        "githubLink": "https://github.com/404khai/Youtube-Redesign-Concept",
-        "liveDemo": "https://youtube-redesign-concept.vercel.app",
+        "name": "Supacricx CLI",
+        "desc": "An npm CLI command for generating Express, Nest.js and Springboot boilerplate code with inbuilt auth.",
+        "languages": "Typescript",
+        "githubLink": "",
+        "liveDemo": "https://www.npmjs.com/package/create-supabricx",
         "role": "FullStack Developer"
     },
     {
@@ -31,8 +31,8 @@
         "name": "Atlas Rentals",
         "desc": "An AI powered home rental service",
         "languages": "React.js, CSS3, Javascript, LLMs",
-        "githubLink": "https://github.com/OghenefegaOmajene/Loanify",
-        "liveDemo": "https://loanify-solutions.vercel.app/",
+        "githubLink": "https://github.com/404khai/atlas-rentals",
+        "liveDemo": "https://atlas-rentals.vercel.app/Home",
         "role": "FullStack Developer"
     },
     {
@@ -58,7 +58,7 @@
         "name": "MiniMart",
         "desc": "A three page e-commerce mobile application that allows users to browse products, and add items to cart and favorites.",
         "languages": "React Native, Zustand, Expo",
-        "githubLink": "https://github.com/OghenefegaOmajene/Finomaly",
+        "githubLink": "https://github.com/404khai/MiniMart",
         "liveDemo": "",
         "role": "FullStack Developer, AI/ML Engineer"
     },
