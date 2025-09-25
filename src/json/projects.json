@@ -1,42 +1,15 @@
 [
     {
         "id": 1,
-        "name": "Youtube Redesign Concept",
-        "desc": "A community proposal for Youtube's redesign, featuring cleaner UI, designed by Juxtopposed on YT",
-        "languages": "React.js, CSS3",
-        "githubLink": "https://github.com/404khai/Youtube-Redesign-Concept",
-        "liveDemo": "https://youtube-redesign-concept.vercel.app",
+        "name": "HireCraft",
+        "desc": "An application for connecting service providers with clients built on SpringBoot",
+        "languages": "React.js, CSS3, Java, SpringBoot",
+        "githubLink": "https://github.com/404khai/HireCraft",
+        "liveDemo": "http://hirecraft.vercel.app",
         "role": "FullStack Developer"
     },
     {
         "id": 2,
-        "name": "FluffScoop",
-        "desc": "A website for ordering desserts and ice-cream powered by Zustand",
-        "languages": "Next.js, Typescript, Material UI",
-        "githubLink": "https://github.com/404khai/FluffScoop",
-        "liveDemo": "https://fluffscoop.vercel.app/",
-        "role": "FullStack Developer"
-    },
-    {
-        "id": 3,
-        "name": "MiniMart",
-        "desc": "A three page e-commerce mobile application that allows users to browse products, and add items to cart and favorites.",
-        "languages": "React Native, Zustand, Expo",
-        "githubLink": "https://github.com/OghenefegaOmajene/Finomaly",
-        "liveDemo": "",
-        "role": "FullStack Developer, AI/ML Engineer"
-    },
-    {
-        "id": 4,
-        "name": "Loanify",
-        "desc": "A full stack loan web application for customers with flexible loan types and payment integration",
-        "languages": "React.js, CSS3, Javascript",
-        "githubLink": "https://github.com/OghenefegaOmajene/Loanify",
-        "liveDemo": "https://loanify-solutions.vercel.app/",
-        "role": "FullStack Developer"
-    },
-    {
-        "id": 5,
         "name": "Supanote",
         "desc": "Concept for an AI workspace for taking notes and tasks.",
         "languages": "React.js, CSS3, Javascript",
@@ -45,12 +18,57 @@
         "role": "Frontend Developer"
     },
     {
+        "id": 3,
+        "name": "Youtube Redesign Concept",
+        "desc": "A community proposal for Youtube's redesign, featuring cleaner UI, designed by Juxtopposed on YT",
+        "languages": "React.js, CSS3",
+        "githubLink": "https://github.com/404khai/Youtube-Redesign-Concept",
+        "liveDemo": "https://youtube-redesign-concept.vercel.app",
+        "role": "FullStack Developer"
+    },
+    {
+        "id": 4,
+        "name": "Atlas Rentals",
+        "desc": "An AI powered home rental service",
+        "languages": "React.js, CSS3, Javascript, LLMs",
+        "githubLink": "https://github.com/OghenefegaOmajene/Loanify",
+        "liveDemo": "https://loanify-solutions.vercel.app/",
+        "role": "FullStack Developer"
+    },
+    {
+        "id": 5,
+        "name": "Youtube Redesign Concept",
+        "desc": "A community proposal for Youtube's redesign, featuring cleaner UI, designed by Juxtopposed on YT",
+        "languages": "React.js, CSS3",
+        "githubLink": "https://github.com/404khai/Youtube-Redesign-Concept",
+        "liveDemo": "https://youtube-redesign-concept.vercel.app",
+        "role": "FullStack Developer"
+    },
+    {
+        "id": 5,
+        "name": "FluffScoop",
+        "desc": "A website for ordering desserts and ice-cream powered by Zustand",
+        "languages": "Next.js, Typescript, Material UI",
+        "githubLink": "https://github.com/404khai/FluffScoop",
+        "liveDemo": "https://fluffscoop.vercel.app/",
+        "role": "FullStack Developer"
+    },
+    {
         "id": 6,
-        "name": "HireCraft",
-        "desc": "An application for connecting service providers with clients built on SpringBoot",
-        "languages": "React.js, CSS3, Java, SpringBoot",
-        "githubLink": "https://github.com/404khai/HireCraft",
-        "liveDemo": "http://hirecraft.vercel.app",
+        "name": "MiniMart",
+        "desc": "A three page e-commerce mobile application that allows users to browse products, and add items to cart and favorites.",
+        "languages": "React Native, Zustand, Expo",
+        "githubLink": "https://github.com/OghenefegaOmajene/Finomaly",
+        "liveDemo": "",
+        "role": "FullStack Developer, AI/ML Engineer"
+    },
+    {
+        "id": 7,
+        "name": "Loanify",
+        "desc": "A full stack loan web application for customers with flexible loan types and payment integration",
+        "languages": "React.js, CSS3, Javascript",
+        "githubLink": "https://github.com/OghenefegaOmajene/Loanify",
+        "liveDemo": "https://loanify-solutions.vercel.app/",
         "role": "FullStack Developer"
     }
 ]
