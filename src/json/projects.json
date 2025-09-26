@@ -36,7 +36,7 @@
         "role": "Frontend Developer"
     },
     {
-        "id": 1,
+        "id": 5,
         "name": "Aeromedic",
         "desc": "A drone delivery service for medical supplies built on Express",
         "languages": "React.js, CSS3, Prisma, Express.js, Node.js",
@@ -45,16 +45,16 @@
         "role": "FullStack Java Developer"
     },
     {
-        "id": 5,
-        "name": "Youtube Redesign Concept",
-        "desc": "A community proposal for Youtube's redesign, featuring cleaner UI, designed by Juxtopposed on YT",
-        "languages": "React.js, CSS3",
-        "githubLink": "https://github.com/404khai/Youtube-Redesign-Concept",
-        "liveDemo": "https://youtube-redesign-concept.vercel.app",
-        "role": "FullStack Developer"
+        "id": 6,
+        "name": "Zentry Clone",
+        "desc": "A modern animated clone of Zentry's website",
+        "languages": "React.js, Tailwind CSS, GSAP",
+        "githubLink": "https://github.com/404khai/zentry",
+        "liveDemo": "https://zentry-awwards-web-clone.vercel.app",
+        "role": "Frontend Web Developer"
     },
     {
-        "id": 6,
+        "id": 7,
         "name": "FluffScoop",
         "desc": "A website for ordering desserts and ice-cream powered by Zustand",
         "languages": "Next.js, Typescript, Material UI",
@@ -63,7 +63,7 @@
         "role": "Frontend Web Developer"
     },
     {
-        "id": 7,
+        "id": 8,
         "name": "MiniMart",
         "desc": "A three page e-commerce mobile application that allows users to browse products, and add items to cart and favorites.",
         "languages": "React Native, Zustand, Expo",
@@ -72,7 +72,7 @@
         "role": "Mobile Developer"
     },
     {
-        "id": 8,
+        "id": 9,
         "name": "BioTrace",
         "desc": "A concept design for a futuristic health monitoring application",
         "languages": "Next.js, Tailwind, Typescript",
@@ -81,12 +81,21 @@
         "role": "Frontend Web Developer"
     },
     {
-        "id": 9,
+        "id": 10,
         "name": "Pawfect Care",
         "desc": "A full stack cross-platform mobile application for pet owners, vets and animal shelters",
         "languages": "Flutter, Firebase, Dart",
         "githubLink": "https://github.com/OghenefegaOmajene/Loanify",
         "liveDemo": "https://loanify-solutions.vercel.app",
         "role": "FullStack Mobile Developer"
+    },
+    {
+        "id": 11,
+        "name": "Youtube Redesign Concept",
+        "desc": "A community proposal for Youtube's redesign, featuring cleaner UI, designed by Juxtopposed on YT",
+        "languages": "React.js, CSS3",
+        "githubLink": "https://github.com/404khai/Youtube-Redesign-Concept",
+        "liveDemo": "https://youtube-redesign-concept.vercel.app",
+        "role": "FullStack Developer"
     }
 ]
