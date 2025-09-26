@@ -6,7 +6,7 @@
         "languages": "React.js, CSS3, Java, SpringBoot",
         "githubLink": "https://github.com/404khai/HireCraft",
         "liveDemo": "http://hirecraft.vercel.app",
-        "role": "FullStack Developer"
+        "role": "FullStack Java Developer"
     },
     {
         "id": 2,
@@ -29,11 +29,20 @@
     {
         "id": 4,
         "name": "Atlas Rentals",
-        "desc": "An AI powered home rental service",
+        "desc": "A concept design for an AI powered home rental service",
         "languages": "React.js, CSS3, Javascript, LLMs",
         "githubLink": "https://github.com/404khai/atlas-rentals",
         "liveDemo": "https://atlas-rentals.vercel.app/Home",
-        "role": "FullStack Developer"
+        "role": "Frontend Developer"
+    },
+    {
+        "id": 1,
+        "name": "Aeromedic",
+        "desc": "A drone delivery service for medical supplies built on Express",
+        "languages": "React.js, CSS3, Prisma, Express.js, Node.js",
+        "githubLink": "https://github.com/404khai/aeromedic",
+        "liveDemo": "http://hirecraft.vercel.app",
+        "role": "FullStack Java Developer"
     },
     {
         "id": 5,
@@ -45,30 +54,39 @@
         "role": "FullStack Developer"
     },
     {
-        "id": 5,
+        "id": 6,
         "name": "FluffScoop",
         "desc": "A website for ordering desserts and ice-cream powered by Zustand",
         "languages": "Next.js, Typescript, Material UI",
         "githubLink": "https://github.com/404khai/FluffScoop",
         "liveDemo": "https://fluffscoop.vercel.app/",
-        "role": "FullStack Developer"
+        "role": "Frontend Web Developer"
     },
     {
-        "id": 6,
+        "id": 7,
         "name": "MiniMart",
         "desc": "A three page e-commerce mobile application that allows users to browse products, and add items to cart and favorites.",
         "languages": "React Native, Zustand, Expo",
         "githubLink": "https://github.com/404khai/MiniMart",
         "liveDemo": "",
-        "role": "FullStack Developer, AI/ML Engineer"
+        "role": "Mobile Developer"
     },
     {
-        "id": 7,
-        "name": "Loanify",
-        "desc": "A full stack loan web application for customers with flexible loan types and payment integration",
-        "languages": "React.js, CSS3, Javascript",
+        "id": 8,
+        "name": "BioTrace",
+        "desc": "A concept design for a futuristic health monitoring application",
+        "languages": "Next.js, Tailwind, Typescript",
+        "githubLink": "https://github.com/404khai/biotrace",
+        "liveDemo": "https://loanify-solutions.vercel.app",
+        "role": "Frontend Web Developer"
+    },
+    {
+        "id": 9,
+        "name": "Pawfect Care",
+        "desc": "A full stack cross-platform mobile application for pet owners, vets and animal shelters",
+        "languages": "Flutter, Firebase, Dart",
         "githubLink": "https://github.com/OghenefegaOmajene/Loanify",
         "liveDemo": "https://loanify-solutions.vercel.app",
-        "role": "FullStack Developer"
+        "role": "FullStack Mobile Developer"
     }
 ]
