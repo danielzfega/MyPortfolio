@@ -73,11 +73,11 @@
     },
     {
         "id": 9,
-        "name": "BioTrace",
+        "name": "HealthLens",
         "desc": "A concept design for a futuristic health monitoring application",
-        "languages": "Next.js, Tailwind, Typescript",
-        "githubLink": "https://github.com/404khai/biotrace",
-        "liveDemo": "https://loanify-solutions.vercel.app",
+        "languages": "React.js, Tailwind, Javascript",
+        "githubLink": "https://github.com/404khai/healthlens",
+        "liveDemo": "https://healthlens-system.vercel.app",
         "role": "Frontend Web Developer"
     },
     {
