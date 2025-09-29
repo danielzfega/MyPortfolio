@@ -1,7 +1,7 @@
 
 import React, { useState, useRef, useEffect } from "react";
 import "./About.css";
-import me from "../../images/setup.jpeg";
+import me from "../../images/coffee.jpeg";
 import { TbCaretRight } from "react-icons/tb";
 
 const About = () => {
