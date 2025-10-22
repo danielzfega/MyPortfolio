@@ -57,20 +57,20 @@ const Experience = () => {
         </div>
       </div>
 
-      {/* <div className="expBox">
+      <div className="expBox">
         <div 
           className={`organisation ${expSelect === 'snapi' ? 'active' : ''}`}
           onClick={() => setExpSelect('snapi')}
         >
-          <p>Revixor AI</p>
+          <p>HNG13</p>
         </div>
 
         <div className="expDesc">
-          <p><b>Founder, Software Engineer @ <span style={{color: "#64ffda"}}>Revixor AI</span></b></p>
-          <p>JUL 2025 - present</p>
-          <p><i style={{color: "#64ffda"}}><TbCaretRight /></i>Maintaining and implementing AI features across the platform, pushing updates & marketing</p>
+          <p><b>Backend Intern @ <span style={{color: "rgb(103, 176, 72)"}}>HNG13</span></b></p>
+          <p>OCT 2025 - NOV 2025</p>
+          <p><i style={{color: "rgb(103, 176, 72)"}}><TbCaretRight /></i>Developed RESTful API projects with Django and FastAPI, implementing natural language parsed search while working closely with expert mentors.</p>
         </div>
-      </div> */}
+      </div>
 
       <div className="footer">
         <p>Built and designed by Daniels Fega, &copy; 2025</p>

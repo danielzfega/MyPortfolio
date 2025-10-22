@@ -29,10 +29,15 @@ const About = () => {
 
   // List of skill images
   const listTechStack = [
-    {name: "Html 5"},
-    {name: "Css 3"},
+    {name: "Html5"},
+    {name: "Css3"},
     {name: "Javascript ES6+"},
     { name: "Typescript" },
+    {name: "Java"},
+    {name: "SpringBoot"},
+    {name: "Python"},
+    {name: "Django"},
+    {name: "FastAPI"},
     { name: "Node.js" },
     { name: "Nest.js" },
     { name: "Tailwind CSS" },
@@ -42,11 +47,12 @@ const About = () => {
     { name: "Next.js" },
     { name: "Angular" },
     { name: "React Native" },
-    { name: "C" },
+    { name: "Flutter" },
+    {name: "Dart"},
+    {name: "Go"},
+    {name: "Rust"},
     { name: "C#" },
-    { name: "Java" },
-    // {name: "Spring"},
-    {name: "SpringBoot"},
+    {name: "C"},    
     { name: "Php" },
   ];
 
@@ -54,9 +60,9 @@ const About = () => {
     <div className={`about animation ${isVisible ? "animation-active" : ""}`} ref={aboutRef}>
         <div className="aboutTxt">
           <p className="aboutTxtHead"><b>/about me</b></p>
-          <h4 className="randomAboutP"><b>Software Engineering student</b> at <span style={{color: "rgb(103, 176, 72)"}}>Aptech Education</span>, exploring <span style={{color: "rgb(103, 176, 72)"}}>Python</span></h4>
-          <h4>Intrigued by B2B Saas, AI startups and LLMs.</h4>
-          <h4>Fullstack Web Developer & Roblox Games Developer.</h4>
+          <h4 className="randomAboutP"><b>Software Engineer</b>  exploring <span style={{color: "rgb(103, 176, 72)"}}>Python, Rust and Go</span></h4>
+          <h4>Intrigued by B2B Saas, AI startups and Agentic AI.</h4>
+          <h4>Fullstack Web & Mobile Developer, Roblox Games Developer.</h4>
           <p>Here are some technologies I work with:</p>
 
           <div className="techStack">
