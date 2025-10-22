@@ -167,7 +167,7 @@ const Home = () => {
           Software Engineer, Roblox Developer.
         </p>
 
-          <a href="/cv.pdf" download="Daniels-Fega-CV.pdf" className="button">
+          <a href="/Daniels-Fega-CV.pdf" download="Daniels-Fega-CV.pdf" className="button">
             <span className="button_lg">
               <span className="button_sl"></span>
               <span className="button_text">Download my CV</span>
