@@ -10,12 +10,12 @@
     },
     {
         "id": 2,
-        "name": "Supanote",
-        "desc": "Concept for an AI workspace for taking notes and tasks.",
-        "languages": "React.js, CSS3, Javascript",
-        "githubLink": "https://github.com/404khai/supanote",
-        "liveDemo": "https://supanote-space.vercel.app",
-        "role": "Frontend Developer"
+        "name": "FarmIntel",
+        "desc": "AI-driven intelligence for smarter, sustainable farming solutions.",
+        "languages": "React.js, TailwindCSS, Python, Django",
+        "githubLink": "https://github.com/404khai/FarmIntel",
+        "liveDemo": "http://farmintel-ai.vercel.app",
+        "role": "FullStack Python Developer, ML Engineer"
     },
     {
         "id": 3,
@@ -28,6 +28,51 @@
     },
     {
         "id": 4,
+        "name": "Oroshi",
+        "desc": "A concept e-commerce and delivery mobile application for a sushi brand.",
+        "languages": "Typescript, React Native, Zustand, Expo",
+        "githubLink": "https://github.com/404khai/oroshi",
+        "liveDemo": "",
+        "role": "Mobile Developer"
+    },
+    {
+        "id": 5,
+        "name": "VetLink",
+        "desc": "A web version / extension of the PawfectCare App that allows users to schedule appointments with vets.",
+        "languages": "Typescript, Python, React.js, TailwindCSS, FastAPI",
+        "githubLink": "https://github.com/404khai/vetlink-fastapi",
+        "liveDemo": "https://vetlink-app.vercel.app",
+        "role": "FullStack Python Developer"
+    },
+    {
+        "id": 6,
+        "name": "Pawfect Care",
+        "desc": "A full stack cross-platform mobile application for pet owners, vets and animal shelters developed for a Hackathon.",
+        "languages": "Flutter, Firebase, Dart",
+        "githubLink": "https://github.com/OghenefegaOmajene/Loanify",
+        "liveDemo": "https://loanify-solutions.vercel.app",
+        "role": "FullStack Mobile Developer"
+    },
+    {
+        "id": 7,
+        "name": "Krea AI Clone",
+        "desc": "Perfect clone of the previous Krea AI website designed from just an image.",
+        "languages": "Next.js, TailwindCSS, Typescript",
+        "githubLink": "https://github.com/404khai/Krea-AI-Clone",
+        "liveDemo": "https://krea-ai-web-clone.vercel.app/",
+        "role": "Frontend Developer"
+    },
+    {
+        "id": 8,
+        "name": "Supanote",
+        "desc": "Concept for an AI workspace for taking notes and tasks.",
+        "languages": "React.js, CSS3, Javascript",
+        "githubLink": "https://github.com/404khai/supanote",
+        "liveDemo": "https://supanote-space.vercel.app",
+        "role": "Frontend Developer"
+    },
+    {
+        "id": 9,
         "name": "Atlas Rentals",
         "desc": "A concept design for an AI powered home rental service",
         "languages": "React.js, CSS3, Javascript, LLMs",
@@ -35,8 +80,9 @@
         "liveDemo": "https://atlas-rentals.vercel.app/Home",
         "role": "Frontend Developer"
     },
+
     {
-        "id": 5,
+        "id": 10,
         "name": "Aeromedic",
         "desc": "A drone delivery service for medical supplies built on Express",
         "languages": "React.js, CSS3, Prisma, Express.js, Node.js",
@@ -45,7 +91,7 @@
         "role": "FullStack Java Developer"
     },
     {
-        "id": 6,
+        "id": 11,
         "name": "Zentry Clone",
         "desc": "A modern animated clone of Zentry's website",
         "languages": "React.js, Tailwind CSS, GSAP",
@@ -54,7 +100,7 @@
         "role": "Frontend Web Developer"
     },
     {
-        "id": 7,
+        "id": 12,
         "name": "FluffScoop",
         "desc": "A website for ordering desserts and ice-cream powered by Zustand",
         "languages": "Next.js, Typescript, Material UI",
@@ -63,7 +109,7 @@
         "role": "Frontend Web Developer"
     },
     {
-        "id": 8,
+        "id": 13,
         "name": "MiniMart",
         "desc": "A three page e-commerce mobile application that allows users to browse products, and add items to cart and favorites.",
         "languages": "React Native, Zustand, Expo",
@@ -72,7 +118,7 @@
         "role": "Mobile Developer"
     },
     {
-        "id": 9,
+        "id": 14,
         "name": "HealthLens",
         "desc": "A concept design for a futuristic health monitoring application",
         "languages": "React.js, Tailwind, Javascript",
@@ -81,16 +127,7 @@
         "role": "Frontend Web Developer"
     },
     {
-        "id": 10,
-        "name": "Pawfect Care",
-        "desc": "A full stack cross-platform mobile application for pet owners, vets and animal shelters",
-        "languages": "Flutter, Firebase, Dart",
-        "githubLink": "https://github.com/OghenefegaOmajene/Loanify",
-        "liveDemo": "https://loanify-solutions.vercel.app",
-        "role": "FullStack Mobile Developer"
-    },
-    {
-        "id": 11,
+        "id": 15,
         "name": "Youtube Redesign Concept",
         "desc": "A community proposal for Youtube's redesign, featuring cleaner UI, designed by Juxtopposed on YT",
         "languages": "React.js, CSS3",
