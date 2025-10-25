@@ -4,7 +4,7 @@
         "name": "HireCraft",
         "desc": "An application for connecting service providers with clients built on SpringBoot",
         "languages": "React.js, CSS3, Java, SpringBoot",
-        "githubLink": "https://github.com/404khai/HireCraft",
+        "githubLink": "https://github.com/danielzfega/HireCraft",
         "liveDemo": "http://hirecraft.vercel.app",
         "role": "FullStack Java Developer"
     },
@@ -13,7 +13,7 @@
         "name": "FarmIntel",
         "desc": "AI-driven intelligence for smarter, sustainable farming solutions.",
         "languages": "React.js, TailwindCSS, Python, Django",
-        "githubLink": "https://github.com/404khai/FarmIntel",
+        "githubLink": "https://github.com/danielzfega/FarmIntel",
         "liveDemo": "http://farmintel-ai.vercel.app",
         "role": "FullStack Python Developer, ML Engineer"
     },
@@ -31,7 +31,7 @@
         "name": "Oroshi",
         "desc": "A concept e-commerce and delivery mobile application for a sushi brand.",
         "languages": "Typescript, React Native, Zustand, Expo",
-        "githubLink": "https://github.com/404khai/oroshi",
+        "githubLink": "https://github.com/danielzfega/oroshi",
         "liveDemo": "",
         "role": "Mobile Developer"
     },
@@ -40,7 +40,7 @@
         "name": "VetLink",
         "desc": "A web version / extension of the PawfectCare App that allows users to schedule appointments with vets.",
         "languages": "Typescript, Python, React.js, TailwindCSS, FastAPI",
-        "githubLink": "https://github.com/404khai/vetlink-fastapi",
+        "githubLink": "https://github.com/danielzfega/vetlink-fastapi",
         "liveDemo": "https://vetlink-app.vercel.app",
         "role": "FullStack Python Developer"
     },
@@ -58,7 +58,7 @@
         "name": "Krea AI Clone",
         "desc": "Perfect clone of the previous Krea AI website designed from just an image.",
         "languages": "Next.js, TailwindCSS, Typescript",
-        "githubLink": "https://github.com/404khai/Krea-AI-Clone",
+        "githubLink": "https://github.com/danielzfega/Krea-AI-Clone",
         "liveDemo": "https://krea-ai-web-clone.vercel.app/",
         "role": "Frontend Developer"
     },
@@ -67,7 +67,7 @@
         "name": "Supanote",
         "desc": "Concept for an AI workspace for taking notes and tasks.",
         "languages": "React.js, CSS3, Javascript",
-        "githubLink": "https://github.com/404khai/supanote",
+        "githubLink": "https://github.com/danielzfega/supanote",
         "liveDemo": "https://supanote-space.vercel.app",
         "role": "Frontend Developer"
     },
@@ -76,7 +76,7 @@
         "name": "Atlas Rentals",
         "desc": "A concept design for an AI powered home rental service",
         "languages": "React.js, CSS3, Javascript, LLMs",
-        "githubLink": "https://github.com/404khai/atlas-rentals",
+        "githubLink": "https://github.com/danielzfega/atlas-rentals",
         "liveDemo": "https://atlas-rentals.vercel.app/Home",
         "role": "Frontend Developer"
     },
@@ -86,7 +86,7 @@
         "name": "Aeromedic",
         "desc": "A drone delivery service for medical supplies built on Express",
         "languages": "React.js, CSS3, Prisma, Express.js, Node.js",
-        "githubLink": "https://github.com/404khai/aeromedic",
+        "githubLink": "https://github.com/danielzfega/aeromedic",
         "liveDemo": "http://hirecraft.vercel.app",
         "role": "FullStack Java Developer"
     },
@@ -95,7 +95,7 @@
         "name": "Zentry Clone",
         "desc": "A modern animated clone of Zentry's website",
         "languages": "React.js, Tailwind CSS, GSAP",
-        "githubLink": "https://github.com/404khai/zentry",
+        "githubLink": "https://github.com/danielzfega/zentry",
         "liveDemo": "https://zentry-awwards-web-clone.vercel.app",
         "role": "Frontend Web Developer"
     },
@@ -104,7 +104,7 @@
         "name": "FluffScoop",
         "desc": "A website for ordering desserts and ice-cream powered by Zustand",
         "languages": "Next.js, Typescript, Material UI",
-        "githubLink": "https://github.com/404khai/FluffScoop",
+        "githubLink": "https://github.com/danielzfega/FluffScoop",
         "liveDemo": "https://fluffscoop.vercel.app/",
         "role": "Frontend Web Developer"
     },
@@ -113,7 +113,7 @@
         "name": "MiniMart",
         "desc": "A three page e-commerce mobile application that allows users to browse products, and add items to cart and favorites.",
         "languages": "React Native, Zustand, Expo",
-        "githubLink": "https://github.com/404khai/MiniMart",
+        "githubLink": "https://github.com/danielzfega/MiniMart",
         "liveDemo": "",
         "role": "Mobile Developer"
     },
@@ -122,7 +122,7 @@
         "name": "HealthLens",
         "desc": "A concept design for a futuristic health monitoring application",
         "languages": "React.js, Tailwind, Javascript",
-        "githubLink": "https://github.com/404khai/healthlens",
+        "githubLink": "https://github.com/danielzfega/healthlens",
         "liveDemo": "https://healthlens-system.vercel.app",
         "role": "Frontend Web Developer"
     },
@@ -131,7 +131,7 @@
         "name": "Youtube Redesign Concept",
         "desc": "A community proposal for Youtube's redesign, featuring cleaner UI, designed by Juxtopposed on YT",
         "languages": "React.js, CSS3",
-        "githubLink": "https://github.com/404khai/Youtube-Redesign-Concept",
+        "githubLink": "https://github.com/danielzfega/Youtube-Redesign-Concept",
         "liveDemo": "https://youtube-redesign-concept.vercel.app",
         "role": "FullStack Developer"
     }
