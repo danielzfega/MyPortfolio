@@ -34,6 +34,8 @@
     font-size: 25px;
     font-family: var(--font1);
     cursor: pointer;
+    font-weight: bold;
+    color: rgb(145, 135, 0);
 }
 /* .organisation p:hover{
     border-right: 3px solid #64ffda;
@@ -57,13 +59,18 @@
     width: 70%;
     /* background-color: black; */
     height: 100%;
-    font-size: 20px;
     font-family: var(--font2);
 }
+
 .expDesc p{
     line-height: 30px;
 }
-
+.title{
+    font-size: 20px;
+}
+.duration{
+    font-style: italic;
+}
 
 @media screen and (max-width: 650px) {
 

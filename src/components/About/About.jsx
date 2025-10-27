@@ -1,7 +1,7 @@
 
 import React, { useState, useRef, useEffect } from "react";
 import "./About.css";
-import me from "../../images/coffee.jpeg";
+import me from "../../images/mac.jpeg";
 import { TbCaretRight } from "react-icons/tb";
 
 const About = () => {
@@ -60,7 +60,7 @@ const About = () => {
     <div className={`about animation ${isVisible ? "animation-active" : ""}`} ref={aboutRef}>
         <div className="aboutTxt">
           <p className="aboutTxtHead"><b>/about me</b></p>
-          <h4 className="randomAboutP"><b>Software Engineer</b>  exploring <span style={{color: "rgb(103, 176, 72)"}}>Python, Rust and Go</span></h4>
+          <h4 className="randomAboutP"><b>Software Engineer</b>  exploring <span style={{color: "rgb(217, 203, 7)"}}>Python, Rust and Go</span></h4>
           <h4>Intrigued by B2B Saas, AI startups and Agentic AI.</h4>
           <h4>Fullstack Web & Mobile Developer, Roblox Games Developer.</h4>
           <p>Here are some technologies I work with:</p>
@@ -68,7 +68,7 @@ const About = () => {
           <div className="techStack">
             {
               listTechStack.map((techStack, key) => (
-                <p key={key}><i style={{color: "rgb(103, 176, 72)"}}><TbCaretRight /></i>{techStack.name}</p>
+                <p key={key}><i style={{color: "rgb(217, 203, 7)"}}><TbCaretRight /></i>{techStack.name}</p>
               ))  
             }
             

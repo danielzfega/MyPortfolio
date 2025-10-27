@@ -40,11 +40,11 @@
     justify-content: center;
     align-items: center;
     height: 100%;
-    background-color: rgba(217, 203, 7, 0.114);
+    background-color: rgba(217, 203, 7, 0.073);
     border-radius: 30px;
     padding-bottom: 10px;
 }
-.project:hover{rgb(217, 203, 7)
+.project:hover{
     background-color: rgba(103, 176, 72, 0.064);
     transition: 0.6s;
     transform: translateY(-7px);
