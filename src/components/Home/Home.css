@@ -22,6 +22,7 @@
   font-size: 100px;
   font-weight: bold;
   height: 130px;
+  font-family: var(--font1);
   /* background-color: #ff4655; */
 }
 
@@ -29,7 +30,7 @@
   color: #373518;
   background: url('../../images/bg.jpeg') 50% 50%;
   background-size: cover;
-  font-family: "Bangers", system-ui;
+  font-family: var(--font2);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
 }
@@ -47,7 +48,8 @@
 .intro {
   font-size: 30px;
   line-height: 1.5;
-  color: #282828;
+  color: #000000;
+  font-family: var(--font4);
 }
 
 

@@ -15,6 +15,7 @@
     display: flex;
     justify-content: start;
     width: 90%;
+    font-family: var(--font1);
 }
 .expBox{
     display: flex;
@@ -31,6 +32,7 @@
 }
 .organisation p{
     font-size: 25px;
+    font-family: var(--font1);
     cursor: pointer;
 }
 /* .organisation p:hover{
@@ -56,6 +58,7 @@
     /* background-color: black; */
     height: 100%;
     font-size: 20px;
+    font-family: var(--font2);
 }
 .expDesc p{
     line-height: 30px;

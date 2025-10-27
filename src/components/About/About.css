@@ -22,6 +22,7 @@
 .aboutTxt{
   width: 50%;
   height: 90%;
+  font-family: var(--font2);
   /* background-color: antiquewhite; */
   display: flex;
   flex-direction: column;
@@ -35,7 +36,7 @@
 }
 .aboutTxtHead{
   font-size: 50px;
-  font-family: "Bangers", system-ui !important;
+  font-family: var(--font1);
 }
 .aboutImg{
   width: 30%;
