@@ -1,6 +1,5 @@
 import React, {useState, useRef, useEffect} from 'react'
-import { IoCalendar } from "react-icons/io5";
-import { TbCaretRight } from "react-icons/tb";
+import { GoTasklist } from "react-icons/go";
 import './Experience.css'
 
 const Experience = () => {
@@ -42,6 +41,24 @@ const Experience = () => {
   return (
     <section className={`exp animation ${isVisible ? 'animation-active' : ''}`} ref={expRef}>
       <p className='expHeadTxt'><b>/experience</b></p>
+
+      <div className="expBox">
+        <div className="organisation">
+          <p>HNG13</p>
+        </div>
+
+        <div className="expDesc">
+          <p className='title'><b>Backend Intern</b></p>
+          <p className='duration'>OCT 2025 - NOV 2025</p>
+
+          <div className='tasks'>
+            <i className='taskIcon'><GoTasklist /></i>
+            <p>Developed RESTful API projects with Django and FastAPI, implementing natural language parsed search & agentic ai bots while working closely with expert mentors.</p>
+          </div>
+          
+        </div>
+      </div>
+
       <div className="expBox">
         <div 
           className="organisation"
@@ -52,19 +69,11 @@ const Experience = () => {
         <div className="expDesc">
           <p className='title'><b>Frontend Intern</b></p>
           <p className='duration'>AUG 2024 - NOV 2024</p>
-          <p><i style={{color: "rgb(151, 141, 0)"}}><TbCaretRight /></i>Ventured into an impactful internship at SnapiLabs, transforming theoretical knowledge into practical skills, gaining hands-on experience and increasing expertise in frontend web development</p>
-        </div>
-      </div>
 
-      <div className="expBox">
-        <div className="organisation">
-          <p>HNG13</p>
-        </div>
-
-        <div className="expDesc">
-          <p className='title'><b>Backend Intern</b></p>
-          <p className='duration'>OCT 2025 - NOV 2025</p>
-          <p><i style={{color: "rgb(151, 141, 0)"}}><TbCaretRight /></i>Developed RESTful API projects with Django and FastAPI, implementing natural language parsed search & agentic ai bots while working closely with expert mentors.</p>
+          <div className='tasks'>
+            <i className='taskIcon'><GoTasklist /></i>
+            <p>Ventured into an impactful internship at SnapiLabs, transforming theoretical knowledge into practical skills, gaining hands-on experience and increasing expertise in frontend web development</p>
+          </div>
         </div>
       </div>
 
