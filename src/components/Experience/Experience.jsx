@@ -1,23 +1,22 @@
 import React, {useState, useRef, useEffect} from 'react'
-import { IoCalendar } from "react-icons/io5";
-import { TbCaretRight } from "react-icons/tb";
+import { GoTasklist } from "react-icons/go";
 import './Experience.css'
 
 const Experience = () => {
   const expRef = useRef();
   const [isVisible, setIsVisible] = useState(false)
-  const [expSelect, setExpSelect] = useState(false)
+  // const [expSelect, setExpSelect] = useState(false)
 
-  useEffect(() => {
-    const handleClickOutside = (e) => {
-      if (!expRef.current.contains(e.target)) {
-        setExpSelect(null);
-      }
-    };
-  
-    document.addEventListener("mousedown", handleClickOutside);
-    return () => document.removeEventListener("mousedown", handleClickOutside);
-  }, []);
+  // useEffect(() => {
+  //   const handleClickOutside = (e) => {
+  //     if (!expRef.current.contains(e.target)) {
+  //       setExpSelect(null);
+  //     }
+  //   };
+
+  //   document.addEventListener("mousedown", handleClickOutside);
+  //   return () => document.removeEventListener("mousedown", handleClickOutside);
+  // }, []);
   
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -42,33 +41,39 @@ const Experience = () => {
   return (
     <section className={`exp animation ${isVisible ? 'animation-active' : ''}`} ref={expRef}>
       <p className='expHeadTxt'><b>/experience</b></p>
+
       <div className="expBox">
-        <div 
-          className={`organisation ${expSelect === 'snapi' ? 'active' : ''}`}
-          onClick={() => setExpSelect('snapi')}
-        >
-          <p>SnapiLabs</p>
+        <div className="organisation">
+          <p>HNG13</p>
         </div>
 
         <div className="expDesc">
-          <p><b>Intern @ <span style={{color: "rgb(103, 176, 72)"}}>SnapiLabs</span></b></p>
-          <p>AUG 2024 - NOV 2024</p>
-          <p><i style={{color: "rgb(103, 176, 72)"}}><TbCaretRight /></i>Ventured into an impactful internship at SnapiLabs, transforming theoretical knowledge into practical skills, gaining hands-on experience and increasing expertise in frontend web development</p>
+          <p className='title'><b>Backend Intern</b></p>
+          <p className='duration'>OCT 2025 - NOV 2025</p>
+
+          <div className='tasks'>
+            <i className='taskIcon'><GoTasklist /></i>
+            <p>Developed RESTful API projects with Django and FastAPI, implementing natural language parsed search & agentic ai bots while working closely with expert mentors.</p>
+          </div>
+          
         </div>
       </div>
 
       <div className="expBox">
         <div 
-          className={`organisation ${expSelect === 'snapi' ? 'active' : ''}`}
-          onClick={() => setExpSelect('snapi')}
+          className="organisation"
         >
-          <p>HNG13</p>
+          <p>SnapiLabs</p>
         </div>
 
         <div className="expDesc">
-          <p><b>Backend Intern @ <span style={{color: "rgb(103, 176, 72)"}}>HNG13</span></b></p>
-          <p>OCT 2025 - NOV 2025</p>
-          <p><i style={{color: "rgb(103, 176, 72)"}}><TbCaretRight /></i>Developed RESTful API projects with Django and FastAPI, implementing natural language parsed search while working closely with expert mentors.</p>
+          <p className='title'><b>Frontend Intern</b></p>
+          <p className='duration'>AUG 2024 - NOV 2024</p>
+
+          <div className='tasks'>
+            <i className='taskIcon'><GoTasklist /></i>
+            <p>Ventured into an impactful internship at SnapiLabs, transforming theoretical knowledge into practical skills, gaining hands-on experience and increasing expertise in frontend web development</p>
+          </div>
         </div>
       </div>
 

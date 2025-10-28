@@ -10,8 +10,9 @@
 .projectTitle{
     width: 87%;
     font-size: 50px;
+    font-family: var(--font1);
     /* border: 1px solid white; */
-    margin: 0;
+    margin-bottom: 10;
 }
 .projectBox{
     /* background-color: #2b6fe6; */
@@ -39,12 +40,12 @@
     justify-content: center;
     align-items: center;
     height: 100%;
-    background-color: rgba(103, 176, 72, 0.142);
-    border-radius: 10px;
+    background-color: rgba(217, 119, 7, 0.1);
+    border-radius: 30px;
     padding-bottom: 10px;
 }
 .project:hover{
-    background-color: rgba(103, 176, 72, 0.064);
+    background-color: rgba(217, 119, 7, 0.059);
     transition: 0.6s;
     transform: translateY(-7px);
     cursor: pointer;
@@ -54,6 +55,7 @@
     display: flex;
     /* align-items: center; */
     justify-content: space-between;
+    
     /* height: 10%; */
     height: 50px;
     /* background-color: rgba(255, 255, 255, 0.411); */
@@ -62,6 +64,7 @@
 
 .projectName{
     font-size: 25px !important;
+    font-family: var(--font1);
     margin: 0;
 }
 .linkIcons{
@@ -95,6 +98,7 @@
     width: 90%;
     height: 80%;
     display: flex;
+    font-family: var(--font2);
     flex-direction: column;
     /* justify-content: center; */
     gap: 20px;

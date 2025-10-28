@@ -97,7 +97,7 @@ const Projects = () => {
               projects.map((project, key) => (
                 <div key={key} className='project'>
                   <div className="projectHead">
-                    <i style={{color: "rgb(103, 176, 72)", fontSize: "30px"}}><IoFolderOpen/></i>
+                    <i style={{color: "rgb(217, 119, 7)", fontSize: "30px"}}><IoFolderOpen/></i>
 
                     <div className="linkIcons">
                       <i><a href={project.githubLink}><IoLogoGithub/></a></i>

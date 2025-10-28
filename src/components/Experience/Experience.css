@@ -15,6 +15,7 @@
     display: flex;
     justify-content: start;
     width: 90%;
+    font-family: var(--font1);
 }
 .expBox{
     display: flex;
@@ -31,7 +32,10 @@
 }
 .organisation p{
     font-size: 25px;
+    font-family: var(--font1);
     cursor: pointer;
+    font-weight: bold;
+    color: rgb(217, 119, 7);
 }
 /* .organisation p:hover{
     border-right: 3px solid #64ffda;
@@ -55,12 +59,39 @@
     width: 70%;
     /* background-color: black; */
     height: 100%;
-    font-size: 20px;
-}
-.expDesc p{
-    line-height: 30px;
+    font-family: var(--font2);
 }
 
+
+.title{
+    font-size: 20px;
+}
+.duration{
+    font-style: italic;
+    font-size: 15px;
+}
+
+.footer{
+    font-family: var(--font1);
+    color: black;
+    font-weight: bold;
+}
+
+.tasks{
+    display: flex;
+    align-items: start;
+    gap: 10px;
+}
+.tasks p{
+    line-height: 25px;
+    margin: 0;
+}
+.taskIcon{
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    color: rgb(217, 119, 7);
+}
 
 @media screen and (max-width: 650px) {
 

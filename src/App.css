@@ -1,18 +1,14 @@
 
-@import url('https://fonts.googleapis.com/css2?family=NTR&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
-/* @font-face {
-  font-family: 'SquareGame';
-  src: url('./fonts/Square Game.woff2') format('woff2'), 
-       url('./fonts/Square Game.ttf') format('truetype');
-} */
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Grid+Single:wght@100..900&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Doto:wght@100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
 *{
-  font-family: "NTR", sans-serif;
+  --font1: 'Doto', sans-serif;
+  --font2: 'Nunito', sans-serif;
+  --font3: 'DM Mono', monospace;
+  --font4: 'Bitcount Grid Single', system-ui;
 }
 body{
   margin: 0;
-  font-family: Poppins, sans-serif;
   /* background-color: #ebd49488; */
   background-color: rgba(255, 255, 255, 0.8);
   /* background-color: black; */
